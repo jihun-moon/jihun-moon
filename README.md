@@ -26,5 +26,6 @@
 
 ### ✉️ Contact & Channels
 
-- **Portfolio:** [👉 문지훈의 포트폴리오 바로가기](https://www.notion.so/26d72d9f979f8097a1c1d6585ec7feec?source=copy_link) - **Email:** jihun0948@naver.com
-- **Blog:** ```
+- **Portfolio:** [👉 문지훈의 포트폴리오 바로가기](https://www.notion.so/26d72d9f979f8097a1c1d6585ec7feec)
+- **Email:** jihun0948@naver.com
+- **Blog:** [기술 블로그 준비 중입니다]
