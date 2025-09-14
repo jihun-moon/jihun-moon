@@ -70,6 +70,7 @@
       </a>
     </td>
     <td>
-      </td>
+      <code>포트폴리오 바로가기</code>
+    </td>
   </tr>
 </table>
