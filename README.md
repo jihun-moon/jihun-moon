@@ -1,8 +1,8 @@
 ### 👋 안녕하세요! MLOps 엔지니어를 꿈꾸는 문지훈입니다.
 
-- 🎓 대구대학교에서 **컴퓨터 소프트웨어**를 전공하고 있습니다.
-- 💡 데이터를 통해 더 나은 서비스를 만드는 것에 큰 흥미를 느끼고, 머신러닝 모델을 안정적으로 개발하고 배포하는 **MLOps 파이프라인 구축**에 집중하고 있습니다.
-- ✍️ 문제 해결 과정을 기록하고 공유하는 것을 좋아합니다.
+- 대구대학교에서 **컴퓨터 소프트웨어**를 전공하며, 데이터를 통해 더 나은 서비스를 만드는 것에 큰 흥미를 느끼고 있습니다.
+- 특히 머신러닝 모델을 안정적으로 개발하고 배포하는 MLOps 파이프라인 구축에 관심이 많습니다.
+- 문제 해결 과정을 기록하고 공유하는 것을 좋아합니다.
 
 <p align="center"> 
   <img src="https://komarev.com/ghpvc/?username=jihun-moon&label=Profile%20Views&color=brightgreen&style=flat-square" alt="profile views"/>
@@ -27,7 +27,6 @@
 * **Collaboration**
     <p>
       <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
     </p>
 
 ---
