@@ -7,6 +7,8 @@
 
 ### 📊 My GitHub Activity
 <p align="center">
+  <img src="https://komarev.com/ghpvc/?username=jihun-moon&label=Views&color=0e75b6&style=flat-square" alt="profile views"/>
+  <br/><br/>
   <img src="https://github-readme-stats.vercel.app/api?username=jihun-moon&show_icons=true&theme=radical&rank_icon=github" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jihun-moon&layout=compact&theme=radical" />
 </p>
