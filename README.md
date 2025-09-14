@@ -4,7 +4,7 @@
 - 머신러닝 모델을 안정적으로 개발하고 배포하는 **MLOps 파이프라인 구축**에 관심이 많으며, 문제 해결 과정을 기록하고 공유하는 것을 좋아합니다.
 
 <p align="left"> 
-  <img src="https://komarev.com/ghpvc/?username=jihun-moon&label=Profile%20Views&color=blue&style=flat"/>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=jihun-moon.jihun-moon"/>
 </p>
 
 ---
