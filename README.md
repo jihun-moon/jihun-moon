@@ -4,28 +4,48 @@
 - 특히 머신러닝 모델을 안정적으로 개발하고 배포하는 MLOps 파이프라인 구축에 관심이 많습니다.
 - 문제 해결 과정을 기록하고 공유하는 것을 좋아합니다.
 
----
-
-### 🛠️ Tech Stack
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=Kubernetes&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=Amazon-AWS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+<p align="center">
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjihun-moon&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=PROFILE+VIEWS&edge_flat=false"/>
 </p>
 
 ---
 
-### 📈 GitHub Stats
+### 🛠️ Tech Stack & Tools
 
-[![Jihun's GitHub stats](https://github-readme-stats.vercel.app/api?username=jihun-moon&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+<p align="left">
+  <b>▶ Languages & Frameworks</b><br/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>
+  <br/><br/>
+  <b>▶ MLOps & Infra</b><br/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=Kubernetes&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=Amazon-AWS&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=GitHub-Actions&logoColor=white"/>
+  <br/><br/>
+  <b>▶ Collaboration</b><br/>
+  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
+</p>
+
+---
+
+### 📈 My GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=jihun-moon&show_icons=true&theme=radical&rank_icon=github" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jihun-moon&layout=compact&theme=radical" />
+</p>
 
 ---
 
 ### ✉️ Contact & Channels
 
-- **Portfolio:** [👉 문지훈의 포트폴리오 바로가기](https://www.notion.so/26d72d9f979f8097a1c1d6585ec7feec)
-- **Email:** jihun0948@naver.com
-- **Blog:** [기술 블로그 준비 중입니다]
+<p align="left">
+  <a href="mailto:jihun0948@naver.com">
+    <img src="https://img.shields.io/badge/Email-03C75A?style=for-the-badge&logo=naver&logoColor=white"/>
+  </a>
+  <a href="https://www.notion.so/26d72d9f979f8097a1c1d6585ec7feec">
+    <img src="https://img.shields.io/badge/Portfolio-FFFFFF?style=for-the-badge&logo=Notion&logoColor=black"/>
+  </a>
+  </p>
