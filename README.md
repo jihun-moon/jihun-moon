@@ -1,8 +1,8 @@
 ### 👋 안녕하세요! MLOps 엔지니어를 꿈꾸는 문지훈입니다.
 
-- 대구대학교에서 **컴퓨터 소프트웨어**를 전공하며, 데이터를 통해 더 나은 서비스를 만드는 것에 큰 흥미를 느끼고 있습니다.
-- 특히 머신러닝 모델을 안정적으로 개발하고 배포하는 **MLOps 파이프라인 구축**에 관심이 많습니다.
-- 문제 해결 과정을 기록하고 공유하는 것을 좋아합니다.
+- 🎓 대구대학교에서 **컴퓨터 소프트웨어**를 전공하고 있습니다.
+- 💡 데이터를 통해 더 나은 서비스를 만드는 것에 큰 흥미를 느끼고, 머신러닝 모델을 안정적으로 개발하고 배포하는 **MLOps 파이프라인 구축**에 집중하고 있습니다.
+- ✍️ 문제 해결 과정을 기록하고 공유하는 것을 좋아합니다.
 
 <p align="center"> 
   <img src="https://komarev.com/ghpvc/?username=jihun-moon&label=Profile%20Views&color=brightgreen&style=flat-square" alt="profile views"/>
@@ -12,30 +12,42 @@
 
 ### 🛠️ Tech Stack & Tools
 
-<p align="left">
-  <b>▶ Languages & Frameworks</b><br/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>
-  <br/><br/>
-  <b>▶ MLOps & Infra</b><br/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=Kubernetes&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=Amazon-AWS&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=GitHub-Actions&logoColor=white"/>
-  <br/><br/>
-  <b>▶ Collaboration</b><br/>
-  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
-</p>
+* **Languages & Frameworks**
+    <p>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>
+    </p>
+* **MLOps & Infrastructure**
+    <p>
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=Kubernetes&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=Amazon-AWS&logoColor=white"/>
+      <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=GitHub-Actions&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=Terraform&logoColor=white"/>
+    </p>
+* **Collaboration**
+    <p>
+      <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
+    </p>
 
 ---
 
 ### 📈 My GitHub Stats
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=jihun-moon&show_icons=true&theme=radical&rank_icon=github" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jihun-moon&layout=compact&theme=radical" />
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=jihun-moon&show_icons=true&theme=radical&rank_icon=github" />
+  </a>
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jihun-moon&layout=compact&theme=radical" />
+  </a>
 </p>
+
+---
+
+### 🌱 Actively Learning
+
+- **Go**: MLOps 엔지니어에게 필수적인 시스템 프로그래밍 역량을 강화하기 위해 공부하고 있습니다.
+- **Monitoring**: 안정적인 모델 서빙을 위해 Prometheus, Grafana 등 모니터링 시스템 구축을 학습하고 있습니다.
 
 ---
 
@@ -48,4 +60,4 @@
   <a href="https://www.notion.so/26d72d9f979f8097a1c1d6585ec7feec">
     <img src="https://img.shields.io/badge/Portfolio-FFFFFF?style=for-the-badge&logo=Notion&logoColor=black"/>
   </a>
-  </p>
+</p>
