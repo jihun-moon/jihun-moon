@@ -52,25 +52,11 @@
 
 ### ✉️ Contact & Channels
 
-<table>
-  <tr>
-    <td>
-      <a href="mailto:jihun0948@naver.com">
-        <img src="https://img.shields.io/badge/Email-03C75A?style=for-the-badge&logo=naver&logoColor=white"/>
-      </a>
-    </td>
-    <td>
-      <code>jihun0948@naver.com</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.notion.so/26d72d9f979f8097a1c1d6585ec7feec">
-        <img src="https://img.shields.io/badge/Portfolio-FFFFFF?style=for-the-badge&logo=Notion&logoColor=black"/>
-      </a>
-    </td>
-    <td>
-      <code>포트폴리오 바로가기</code>
-    </td>
-  </tr>
-</table>
+<p align="left">
+  <a href="mailto:jihun0948@naver.com">
+    <img src="https://img.shields.io/badge/Email-03C75A?style=for-the-badge&logo=naver&logoColor=white"/>
+  </a>
+  <a href="https://www.notion.so/26d72d9f979f8097a1c1d6585ec7feec">
+    <img src="https://img.shields.io/badge/Portfolio-FFFFFF?style=for-the-badge&logo=Notion&logoColor=black"/>
+  </a>
+</p>
