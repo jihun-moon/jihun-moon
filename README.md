@@ -56,6 +56,8 @@
   <a href="mailto:jihun0948@naver.com">
     <img src="https://img.shields.io/badge/Email-03C75A?style=for-the-badge&logo=naver&logoColor=white"/>
   </a>
+  <code>jihun0948@naver.com</code>
+  <br/><br/>
   <a href="https://www.notion.so/26d72d9f979f8097a1c1d6585ec7feec">
     <img src="https://img.shields.io/badge/Portfolio-FFFFFF?style=for-the-badge&logo=Notion&logoColor=black"/>
   </a>
