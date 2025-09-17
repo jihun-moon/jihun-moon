@@ -5,11 +5,28 @@
 
 ---
 
-### 📊 My GitHub Activity
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=jihun-moon&show_icons=true&theme=radical&rank_icon=github" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jihun-moon&layout=compact&theme=radical" />
-</p>
+### 🚀 Featured Projects
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/jihun-moon/battle-rogue">
+        <strong>🎮 1:1 온라인 대전 격투 게임 'Battle Rogue'</strong>
+      </a>
+      <br/><br/>
+      <p>언리얼 엔진 5와 블루프린트, 데디케이티드 서버를 활용하여 개발한 실시간 1:1 온라인 대전 게임입니다.</p>
+      <sub><strong>Keywords:</strong> Unreal Engine, Blueprint, Dedicated Server, Networking</sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/jihun-moon/mobile-doctor-app">
+        <strong>📱 개인 맞춤형 의료 정보 앱 '모바일 닥터'</strong>
+      </a>
+      <br/><br/>
+      <p>Android(Java)로 개발한 위치 기반 병원 검색 및 진료 기록 관리 앱입니다. (UI/UX, 완성도 부문 1위)</p>
+      <sub><strong>Keywords:</strong> Android, Java, UI/UX Design, Team Project</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -20,6 +37,8 @@
     <td align="center"><strong>Languages</strong></td>
     <td>
       <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"/>
+      <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=C%2B%2B&logoColor=white"/>
     </td>
   </tr>
   <tr>
@@ -32,13 +51,30 @@
       <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=Terraform&logoColor=white"/>
     </td>
   </tr>
+   <tr>
+    <td align="center"><strong>Game & App</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/Unreal_Engine-313131?style=for-the-badge&logo=unrealengine&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
+    </td>
+  </tr>
   <tr>
     <td align="center"><strong>Collaboration</strong></td>
     <td>
       <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
     </td>
   </tr>
 </table>
+
+---
+
+### 📊 My GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=jihun-moon&show_icons=true&theme=radical&rank_icon=github" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jihun-moon&layout=compact&theme=radical" />
+</p>
 
 ---
 
