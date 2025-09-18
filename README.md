@@ -9,21 +9,29 @@
 
 <table>
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://github.com/jihun-moon/battle-rogue">
         <strong>🎮 1:1 온라인 대전 격투 게임 'Battle Rogue'</strong>
       </a>
       <br/><br/>
-      <p>언리얼 엔진 5와 블루프린트, 데디케이티드 서버를 활용하여 개발한 실시간 1:1 온라인 대전 게임입니다.</p>
-      <sub><strong>Keywords:</strong> Unreal Engine, Blueprint, Dedicated Server, Networking</sub>
+      <p>Unreal Engine 5와 데디케이티드 서버를 활용하여 개발한 실시간 1:1 온라인 대전 게임입니다.</p>
+      <sub><strong>Keywords:</strong> Unreal Engine, Blueprint, Dedicated Server, C++</sub>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://github.com/jihun-moon/mobile-doctor-app">
         <strong>📱 개인 맞춤형 의료 정보 앱 '모바일 닥터'</strong>
       </a>
       <br/><br/>
       <p>Android(Java)로 개발한 위치 기반 병원 검색 및 진료 기록 관리 앱입니다. (UI/UX, 완성도 부문 1위)</p>
       <sub><strong>Keywords:</strong> Android, Java, UI/UX Design, Team Project</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://github.com/jihun-moon/opengl-earthquake-simulation">
+        <strong>🏫 3D 지진 대피 안전 교육 시뮬레이션</strong>
+      </a>
+      <br/><br/>
+      <p>OpenGL과 C++로 구현한 3D 시뮬레이션으로, 인터랙티브 카메라를 통해 효과적인 안전 교육을 제공합니다.</p>
+      <sub><strong>Keywords:</strong> OpenGL, C++, 3D Graphics, Team Project</sub>
     </td>
   </tr>
 </table>
