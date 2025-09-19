@@ -98,5 +98,5 @@
 <p align="left">
   <strong>Email</strong>: <a href="mailto:jihun0948@naver.com">jihun0948@naver.com</a>
   <br/>
-  <strong>Portfolio</strong>: <a href="https://www.notion.so/26d72d9f979f8097a1c1d6585ec7feec">Notion Portfolio</a>
+  <strong>Portfolio</strong>: <a href="https://www.notion.so/27372d9f979f80328543d8961072de63?source=copy_link">Notion Portfolio</a>
 </p>
