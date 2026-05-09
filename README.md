@@ -9,6 +9,7 @@
   <a href="https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link"><img src="https://img.shields.io/badge/Knowledge_Hub-Notion-000000?style=flat-square&logo=notion&logoColor=white"/></a>
   <img src="https://img.shields.io/badge/Daegu,_KR-📍-1f6feb?style=flat-square"/>
   <img src="https://img.shields.io/badge/Focus-MLOps_·_Quant_·_LLM_Agents-7B42BC?style=flat-square"/>
+  <img src="https://komarev.com/ghpvc/?username=jihun-moon&label=Profile%20views&color=0e75b6&style=flat-square"/>
 </p>
 
 ---
@@ -27,11 +28,12 @@ Currently building **CHRONO**, a retail-facing quantitative trading platform tha
 
 | Project | Stack | Highlights |
 |---|---|---|
-| **[CHRONO](#)** &nbsp;<sub>private</sub> | FastAPI · Next.js 16 · PostgreSQL / TimescaleDB · ONNX Runtime · Docker · GitHub Actions | Transformer **v2.3 (56.9% OOS)** · 22 alpha signals · 9-state regime detector · shock detector · self-correction loop · real-time WS ticks |
-| **[PII-Guardian](#)** &nbsp;<sub>private</sub> | Python · HyperCLOVA · NCP · Streamlit · CI/CD | LLM-driven PII leak detection deployed on Naver Cloud — full pipeline from log ingest → model inference → alerting |
+| **CHRONO** &nbsp;<sub>private</sub> | FastAPI · Next.js 16 · PostgreSQL / TimescaleDB · ONNX Runtime · Docker · GitHub Actions | Transformer **v2.3 (56.9% OOS)** · 22 alpha signals · 9-state regime detector · shock detector · self-correction loop · real-time WS ticks |
+| **PII-Guardian** &nbsp;<sub>private</sub> | Python · HyperCLOVA · NCP · Streamlit · CI/CD | LLM-driven PII leak detection deployed on Naver Cloud — full pipeline from log ingest → model inference → alerting |
 | **[im-bank-n8n-agent](https://github.com/jihun-moon/im-bank-n8n-agent)** | n8n · Node.js · Upstage Solar AI | Real-time security log analyzer & auto-learning agent for IM Bank — workflow-driven LLM ops |
-| **[Lecture-Summarizer-AI](#)** &nbsp;<sub>private</sub> | Python · OpenAI Whisper · Streamlit | LMS 강의 실시간 녹음 + Whisper STT + LLM 요약 파이프라인 |
+| **Lecture-Summarizer-AI** &nbsp;<sub>private</sub> | Python · OpenAI Whisper · Streamlit | LMS 강의 실시간 녹음 + Whisper STT + LLM 요약 파이프라인 |
 | **[opengl-earthquake-simulation](https://github.com/jihun-moon/opengl-earthquake-simulation)** | C++ · OpenGL | 3D 지진 대피 교육 시뮬레이터 — 인터랙티브 카메라 + 시네마틱 가이드 뷰 |
+| **[battle-rogue](https://github.com/jihun-moon/battle-rogue)** | Unreal Engine 5 · Blueprints · Dedicated Server | 1:1 온라인 대전 격투 게임 — UE5 데디케이티드 서버 |
 
 ---
 
@@ -109,15 +111,33 @@ Currently building **CHRONO**, a retail-facing quantitative trading platform tha
 
 ---
 
-### GitHub
+### GitHub Stats
 
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=jihun-moon&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true&count_private=true" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jihun-moon&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" />
 </p>
 
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=jihun-moon&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=jihun-moon&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8" alt="GitHub Trophies"/>
+</p>
+
+---
+
+### Contribution Snake
+
+<p align="center">
+  <img alt="snake animation" src="https://raw.githubusercontent.com/jihun-moon/jihun-moon/output/github-contribution-grid-snake.svg" />
+</p>
+
 ---
 
 <p align="center">
   <sub>대구대학교 컴퓨터소프트웨어 · ML / Data Systems · Daegu, South Korea</sub>
+  <br/>
+  <sub>README · stats · snake animation are auto-refreshed daily via GitHub Actions.</sub>
 </p>
