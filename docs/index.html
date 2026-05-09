@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="문지훈 (Jihun Moon) — ML/Data Systems Engineer. Building production-grade AI/data systems: CHRONO (quant), PII-Guardian (LLM ops), and more." />
+<meta property="og:title" content="Jihun Moon · ML/Data Systems Engineer" />
+<meta property="og:description" content="Designing and shipping production-grade AI / data systems — model, service, pipeline, infra." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jihun-moon.github.io/jihun-moon/" />
+<title>Jihun Moon · ML/Data Systems Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><span class="brand-mark">JM</span><span class="brand-text">Jihun Moon</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#principles">Principles</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">ML / Data Systems Engineer · Daegu, KR</p>
+    <h1 class="hero-title">
+      I design and ship<br/>
+      <span class="grad">production-grade</span><br/>
+      AI &amp; data systems.
+    </h1>
+    <p class="hero-sub">
+      End-to-end builder — from notebook prototype to deployed, observable service.
+      Currently building <strong>CHRONO</strong>, a retail-facing quantitative trading platform with
+      Transformer regime forecaster, 22-signal alpha library, and Markowitz + VaR risk engine.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projects">See projects →</a>
+      <a class="btn" href="https://github.com/jihun-moon" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link" target="_blank" rel="noopener">Notion Hub</a>
+    </div>
+    <div class="hero-stats">
+      <div><span class="stat-num">56.9%</span><span class="stat-label">CHRONO OOS accuracy</span></div>
+      <div><span class="stat-num">22</span><span class="stat-label">alpha signals</span></div>
+      <div><span class="stat-num">9</span><span class="stat-label">market regimes</span></div>
+      <div><span class="stat-num">∞</span><span class="stat-label">curiosity</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <div>
+        <p>
+          I'm <strong>Jihun Moon</strong>, a Computer Software student at <strong>Daegu University</strong> (South Korea)
+          who builds end-to-end AI / data systems with the discipline of a production engineer.
+        </p>
+        <p>
+          I move comfortably across the stack — model training, inference serving, ingest pipelines,
+          CI/CD, monitoring — and care more about <em>data correctness, observability, and honest metrics</em>
+          than about flashy demos.
+        </p>
+        <p>
+          My current obsession is <strong>quantitative trading systems</strong>: how to bring hedge-fund-grade
+          analytics within reach of retail investors without the false confidence.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>What I'm focused on</h3>
+        <ul>
+          <li><strong>MLOps</strong> — reproducible training, model versioning, serving</li>
+          <li><strong>Quantitative finance</strong> — alpha signal libraries, risk engines, regime detection</li>
+          <li><strong>LLM agents</strong> — n8n / HyperCLOVA / Solar workflows for security &amp; ops</li>
+          <li><strong>Production reliability</strong> — observability, CI gates, security review automation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-sub">Selected work — flagship in <strong>private</strong> dev, public ones linked.</p>
+    <div class="project-grid">
+
+      <article class="project-card flagship">
+        <div class="project-tag">Flagship · private</div>
+        <h3>CHRONO</h3>
+        <p class="project-desc">
+          Retail-facing quantitative trading platform. Transformer-based regime forecaster
+          (<strong>v2.3 · 56.9% OOS accuracy</strong>), 22-signal alpha library, 9-state regime detector,
+          shock detector, self-correction loop, real-time WebSocket ticks.
+        </p>
+        <div class="chips">
+          <span class="chip chip-py">FastAPI</span>
+          <span class="chip chip-ts">Next.js 16</span>
+          <span class="chip">PostgreSQL · TimescaleDB</span>
+          <span class="chip">ONNX Runtime</span>
+          <span class="chip">Docker</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">private</div>
+        <h3>PII-Guardian</h3>
+        <p class="project-desc">
+          LLM-driven PII leak detection deployed on Naver Cloud — full pipeline from log ingest →
+          model inference → alerting. CI/CD, monitoring, Streamlit dashboard.
+        </p>
+        <div class="chips">
+          <span class="chip chip-py">Python</span>
+          <span class="chip">HyperCLOVA</span>
+          <span class="chip">NCP</span>
+          <span class="chip">Streamlit</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">public · 2025 hackathon</div>
+        <h3>
+          <a href="https://github.com/jihun-moon/im-bank-n8n-agent" target="_blank" rel="noopener">
+            AIM SecurityFlow (im-bank-n8n-agent) ↗
+          </a>
+        </h3>
+        <p class="project-desc">
+          Self-running 24/7 security log analysis platform for IM Bank. PII detection (100% masking) →
+          Solar Pro 2 risk classification → KB learning loop → SSE live dashboard. Self-healing watchdog.
+        </p>
+        <div class="chips">
+          <span class="chip">n8n</span>
+          <span class="chip chip-js">Node.js · Express</span>
+          <span class="chip">Upstage Solar</span>
+          <span class="chip">SQLite</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">private</div>
+        <h3>Lecture-Summarizer-AI</h3>
+        <p class="project-desc">
+          LMS lecture real-time recorder + Whisper STT + LLM summary pipeline.
+          End-to-end speech → markdown notes for students who need replay-able context.
+        </p>
+        <div class="chips">
+          <span class="chip chip-py">Python</span>
+          <span class="chip">OpenAI Whisper</span>
+          <span class="chip">Streamlit</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">public · graphics</div>
+        <h3>
+          <a href="https://github.com/jihun-moon/opengl-earthquake-simulation" target="_blank" rel="noopener">
+            OpenGL Earthquake Simulation ↗
+          </a>
+        </h3>
+        <p class="project-desc">
+          3D earthquake evacuation training simulator. Interactive first-person camera + cinematic
+          guide view driven by data files (camera_path_*.txt).
+        </p>
+        <div class="chips">
+          <span class="chip chip-cpp">C++17</span>
+          <span class="chip">OpenGL</span>
+          <span class="chip">GLUT</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">public · multiplayer</div>
+        <h3>
+          <a href="https://github.com/jihun-moon/battle-rogue" target="_blank" rel="noopener">
+            Battle Rogue ↗
+          </a>
+        </h3>
+        <p class="project-desc">
+          1v1 online fighting game with Unreal Engine 5. Dedicated server architecture with
+          authoritative simulation and anim-montage combo system. C++ + Blueprint hybrid.
+        </p>
+        <div class="chips">
+          <span class="chip">Unreal Engine 5</span>
+          <span class="chip">Blueprints</span>
+          <span class="chip chip-cpp">C++</span>
+          <span class="chip">Dedicated Server</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">public · android</div>
+        <h3>
+          <a href="https://github.com/jihun-moon/mobile-doctor-app" target="_blank" rel="noopener">
+            Mobile Doctor ↗
+          </a>
+        </h3>
+        <p class="project-desc">
+          Personalized medical info Android app — location-based hospital search, symptom search,
+          medical history, medication inventory. 5+ activities, RecyclerView, custom anim.
+        </p>
+        <div class="chips">
+          <span class="chip">Android</span>
+          <span class="chip chip-java">Java 17</span>
+          <span class="chip">Gradle KTS</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="section">
+  <div class="container">
+    <h2 class="section-title">Tech I Use Daily</h2>
+    <div class="stack-grid">
+      <div class="stack-cat">
+        <h4>Languages</h4>
+        <p>Python · TypeScript · SQL · Java · C++</p>
+      </div>
+      <div class="stack-cat">
+        <h4>Backend / Data</h4>
+        <p>FastAPI · PostgreSQL · TimescaleDB · Redis · n8n</p>
+      </div>
+      <div class="stack-cat">
+        <h4>ML / Inference</h4>
+        <p>PyTorch · ONNX Runtime · scikit-learn · Whisper · HyperCLOVA · Upstage Solar</p>
+      </div>
+      <div class="stack-cat">
+        <h4>Frontend</h4>
+        <p>Next.js · React · TailwindCSS</p>
+      </div>
+      <div class="stack-cat">
+        <h4>Infra / DevOps</h4>
+        <p>Docker · Kubernetes · GitHub Actions · AWS · NCP · Terraform</p>
+      </div>
+      <div class="stack-cat">
+        <h4>Observability</h4>
+        <p>Prometheus · Grafana · Sentry</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="principles" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Engineering Principles</h2>
+    <div class="principles">
+      <div class="principle">
+        <h4>Boundaries over abstractions</h4>
+        <p>Validate at I/O edges, trust the core. Don't invent error handling for cases that can't happen.</p>
+      </div>
+      <div class="principle">
+        <h4>Reproducibility first</h4>
+        <p>Every model, every dataset, every deploy is versioned and traceable.</p>
+      </div>
+      <div class="principle">
+        <h4>Observability before scale</h4>
+        <p>No logs / metrics / traces, no production. Period.</p>
+      </div>
+      <div class="principle">
+        <h4>Automate the boring guardrails</h4>
+        <p>Pre-commit hooks, CI gates, security scans, dependency review — let machines catch what humans forget.</p>
+      </div>
+      <div class="principle">
+        <h4>Honest metrics &gt; pretty demos</h4>
+        <p>OOS over IS, ablations over cherry-picked screenshots.</p>
+      </div>
+      <div class="principle">
+        <h4>Boring, working things</h4>
+        <p>Simple infrastructure with strong primitives beats clever abstractions every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact-container">
+    <h2 class="section-title">Let's talk</h2>
+    <p class="contact-lead">
+      개발자 채용 / 협업 / 멘토링 / 단순 호기심 — 어떤 이유든 환영입니다.
+    </p>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:jihun0948@naver.com">
+        <span class="contact-key">Email</span>
+        <span class="contact-val">jihun0948@naver.com</span>
+      </a>
+      <a class="contact-card" href="https://github.com/jihun-moon" target="_blank" rel="noopener">
+        <span class="contact-key">GitHub</span>
+        <span class="contact-val">@jihun-moon</span>
+      </a>
+      <a class="contact-card" href="https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link" target="_blank" rel="noopener">
+        <span class="contact-key">Notion</span>
+        <span class="contact-val">My Knowledge Hub</span>
+      </a>
+      <a class="contact-card" href="https://github.com/jihun-moon/jihun-moon/discussions" target="_blank" rel="noopener">
+        <span class="contact-key">Discussions</span>
+        <span class="contact-val">Open Q&amp;A</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Jihun Moon · 대구대학교 컴퓨터소프트웨어</span>
+    <span>Built with ❤︎ on GitHub Pages · Source: <a href="https://github.com/jihun-moon/jihun-moon">/jihun-moon</a></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+// Smooth scroll for in-page links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+
+</body>
+</html>
