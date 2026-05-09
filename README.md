@@ -114,16 +114,15 @@ Currently building **CHRONO**, a retail-facing quantitative trading platform tha
 ### GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=jihun-moon&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jihun-moon&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" />
-</p>
-
-<p align="center">
   <img src="https://streak-stats.demolab.com?user=jihun-moon&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 </p>
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=jihun-moon&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8" alt="GitHub Trophies"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jihun-moon&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" alt="Activity graph"/>
 </p>
 
 ---
