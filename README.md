@@ -72,7 +72,7 @@ Claude Haiku 가 실패하면 Gemini 2.5 키 3개를 돌리고, 그것도 안 �
 그래서 좋은 숫자를 앞에 내거는 대신 판정불가를 그대로 보여주게 만들었습니다.
 지표가 좋아 보이면 일단 라벨을 섞어서 다시 돌려 보는 습관이 여기서 생겼습니다.
 
-### PII-Guardian (비공개)
+### [PII-Guardian](https://github.com/jihun-moon/PII-Guardian)
 
 웹 페이지를 긁어서 개인정보 노출을 찾는 모델을 만들고 네이버 클라우드에 올린 프로젝트입니다.
 
@@ -80,7 +80,7 @@ Claude Haiku 가 실패하면 Gemini 2.5 키 3개를 돌리고, 그것도 안 �
 * 라벨링을 사람이 하면 못 끝낸다고 보고 LLM 에게 맡긴 게 핵심입니다
 * GitHub Actions 에서 NCP 서버로 SSH 배포
 * 학습 서버 요금을 아끼려고 평소엔 인스턴스를 내려 두고, 필요한 시간에만 NCP API 로 깨우는 워크플로를 따로 뒀습니다
-* 모델을 채점하려고 개인정보가 일부러 박힌 테스트 사이트를 직접 만들어서 재현율을 쟀습니다
+* 모델을 채점하려고 개인정보가 일부러 박힌 테스트 사이트를 직접 만들었습니다. 정답을 아는 페이지가 없으면 재현율을 구할 수 없어서입니다
 
 ### [im-bank-n8n-agent](https://github.com/jihun-moon/im-bank-n8n-agent)
 
@@ -101,8 +101,8 @@ Claude Haiku 가 실패하면 Gemini 2.5 키 3개를 돌리고, 그것도 안 �
 | [opengl-earthquake-simulation](https://github.com/jihun-moon/opengl-earthquake-simulation) | C++ 와 OpenGL 로 학교 건물 2층을 통째로 그린 지진 대피 시뮬레이터. 2,047줄 |
 | [mobile-doctor-app](https://github.com/jihun-moon/mobile-doctor-app) | 위치 기반 병원 검색과 복약 관리 안드로이드 앱 (Java) |
 | [Edu-Bridge-Library](https://github.com/jihun-moon/Edu-Bridge-Library) | 2025 도서관 데이터 활용 공모전. 장서 373,443행을 초등 교육과정에 붙였습니다 |
-| Lecture-Summarizer-AI (비공개) | LMS 강의를 스테레오 믹스로 녹음해서 Whisper 로 받아쓰고 요약 |
-| eth-autotrade-bot (비공개) | CHRONO 이전에 만든 자동매매 봇. 후보 전략을 섀도로 돌려 보고 교체하는 구조 |
+| [Lecture-Summarizer-AI](https://github.com/jihun-moon/Lecture-Summarizer-AI) | 온라인 강의 소리를 스테레오 믹스로 받아 Whisper 로 받아쓰고 요약. 윈도우 전용 |
+| [eth-autotrade-bot](https://github.com/jihun-moon/eth-autotrade-bot) | CHRONO 이전에 만든 자동매매 봇. 후보 전략을 섀도로 먼저 돌려 보고 교체하는 구조. 실전 투입 전에 멈췄습니다 |
 
 <br/>
 
@@ -121,10 +121,15 @@ Claude Haiku 가 실패하면 Gemini 2.5 키 3개를 돌리고, 그것도 안 �
 | 보안 | System Security Checker, Web Security Checker, ACG 인바운드 규칙 |
 | 기타 | AutoScaling, Backup/Restore, Rsync, TTS/STT, Papago, Chatbot API |
 
-마지막 미니 프로젝트로 3-tier 구성을 직접 세웠습니다.
-Multi AZ 에 웹 서버 두 대를 두고 ALB 로 묶고, DB 를 Master 와 Standby 로 이중화하고,
-ACG 인바운드 규칙으로 DB 접근을 웹 서버로만 제한했습니다.
-두 웹 서버가 같은 DB 를 보는지 데이터 동기화까지 확인했습니다.
+마지막 미니 프로젝트로 2-Tier 구성을 직접 세웠습니다. 졸업생 관리 시스템입니다.
+
+- Public Subnet 에 ALB 만 두고 외부 진입을 하나로 모았습니다
+- 웹 서버 두 대는 Private Subnet 에 두고 서로 다른 AZ 에 배치했습니다
+- DB 는 Master 와 Standby 로 이중화하고 매일 02:00 백업, 14일 보관으로 잡았습니다
+- ACG 인바운드 규칙으로 3306 접근을 웹 서버 대역으로만 열었습니다
+
+ALB 가 두 서버로 실제로 나눠 보내는지 확인하려고 페이지 제목에 서버 이름을 찍게 했습니다.
+두 서버가 같은 DB 를 보는지 데이터 동기화까지 확인했습니다.
 
 과정 끝에 NCA 자격증을 땄습니다.
 
