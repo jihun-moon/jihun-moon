@@ -5,8 +5,9 @@
 데이터를 받아서 쌓고, 모델을 돌리고, 화면까지 내보내는 구간을 처음부터 끝까지 세워 보는 걸 주로 합니다.
 지금은 졸업작품 서버 한 대를 넉 달째 상시로 굴리고 있는데, 새 기능을 만드는 시간보다 터진 걸 고치는 시간이 더 많습니다.
 
+* 포트폴리오 **<https://jihun-moon.github.io/jihun-moon/>** (프로젝트를 한 화면에 정리해 뒀습니다)
+* 기록 [Notion Knowledge Hub](https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link) (과목별 노트와 프로젝트 상세)
 * 메일 [jihun0948@naver.com](mailto:jihun0948@naver.com)
-* 기록 [Notion Knowledge Hub](https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link)
 * 대구
 
 <br/>
@@ -191,6 +192,8 @@ auto-commit 이라 되돌릴 것도 없이 그냥 그날 데이터가 없었습�
 수업 과제와 실습은 [daegu-univ-cs](https://github.com/jihun-moon/daegu-univ-cs) 에 모아 두고 있습니다.
 
 <br/>
+
+프로젝트를 한눈에 보려면 [포트폴리오 페이지](https://jihun-moon.github.io/jihun-moon/)가 편합니다.
 
 <p align="center">
   <img alt="contribution snake" src="https://raw.githubusercontent.com/jihun-moon/jihun-moon/output/github-contribution-grid-snake.svg" />
