@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="문지훈 (Jihun Moon) — ML/Data Systems Engineer. Building production-grade AI/data systems: CHRONO (quant), PII-Guardian (LLM ops), and more." />
-<meta property="og:title" content="Jihun Moon · ML/Data Systems Engineer" />
-<meta property="og:description" content="Designing and shipping production-grade AI / data systems — model, service, pipeline, infra." />
+<meta name="description" content="문지훈 · 대구대학교 컴퓨터소프트웨어 4학년. 데이터 수집부터 배포까지 직접 세우고 운영합니다." />
+<meta property="og:title" content="문지훈 · Jihun Moon" />
+<meta property="og:description" content="대구대학교 컴퓨터소프트웨어 4학년. 데이터를 모으고 모델을 붙여서 서버에 올려 굴려 보는 걸 합니다." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jihun-moon.github.io/jihun-moon/" />
-<title>Jihun Moon · ML/Data Systems Engineer</title>
+<title>문지훈 · Jihun Moon</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -18,315 +18,306 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <a class="brand" href="#top"><span class="brand-mark">JM</span><span class="brand-text">Jihun Moon</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#stack">Stack</a></li>
-      <li><a href="#principles">Principles</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="brand"><span class="brand-mark">JM</span><span class="brand-text">문지훈</span></div>
+    <div class="nav-links">
+      <a href="#about">소개</a>
+      <a href="#projects">만든 것</a>
+      <a href="#ncp">클라우드</a>
+      <a href="#ops">운영</a>
+      <a href="#stack">기술</a>
+      <a href="#contact">연락</a>
+    </div>
   </div>
 </nav>
 
-<header id="top" class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">ML / Data Systems Engineer · Daegu, KR</p>
-    <h1 class="hero-title">
-      I design and ship<br/>
-      <span class="grad">production-grade</span><br/>
-      AI &amp; data systems.
-    </h1>
+<header class="hero">
+  <div class="hero-inner container">
+    <div class="eyebrow">대구대학교 컴퓨터소프트웨어학부 4학년</div>
+    <h1 class="hero-title">데이터를 모으고, 모델을 붙이고,<br/><span class="grad">서버에 올려서 굴려 봅니다.</span></h1>
     <p class="hero-sub">
-      End-to-end builder — from notebook prototype to deployed, observable service.
-      Currently building <strong>CHRONO</strong>, a retail-facing quantitative trading platform with
-      Transformer regime forecaster, 22-signal alpha library, and Markowitz + VaR risk engine.
+      졸업작품 서버 한 대를 넉 달째 상시로 운영하고 있습니다.
+      새 기능을 만드는 시간보다 터진 걸 고치는 시간이 더 많습니다.
     </p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#projects">See projects →</a>
-      <a class="btn" href="https://github.com/jihun-moon" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link" target="_blank" rel="noopener">Notion Hub</a>
-    </div>
     <div class="hero-stats">
-      <div><span class="stat-num">56.9%</span><span class="stat-label">CHRONO OOS accuracy</span></div>
-      <div><span class="stat-num">22</span><span class="stat-label">alpha signals</span></div>
-      <div><span class="stat-num">9</span><span class="stat-label">market regimes</span></div>
-      <div><span class="stat-num">∞</span><span class="stat-label">curiosity</span></div>
+      <div><div class="stat-num">3.85</div><div class="stat-label">전체 평점 / 4.50</div></div>
+      <div><div class="stat-num">13</div><div class="stat-label">저장소</div></div>
+      <div><div class="stat-num">20+</div><div class="stat-label">상시 가동 컨테이너</div></div>
+      <div><div class="stat-num">NCA</div><div class="stat-label">네이버 클라우드 자격</div></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://github.com/jihun-moon">GitHub</a>
+      <a class="btn" href="https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link">Notion</a>
+      <a class="btn" href="mailto:jihun0948@naver.com">메일</a>
     </div>
   </div>
 </header>
 
-<section id="about" class="section">
+<section class="section" id="about">
   <div class="container">
-    <h2 class="section-title">About</h2>
-    <div class="about-grid">
-      <div>
-        <p>
-          I'm <strong>Jihun Moon</strong>, a Computer Software student at <strong>Daegu University</strong> (South Korea)
-          who builds end-to-end AI / data systems with the discipline of a production engineer.
-        </p>
-        <p>
-          I move comfortably across the stack — model training, inference serving, ingest pipelines,
-          CI/CD, monitoring — and care more about <em>data correctness, observability, and honest metrics</em>
-          than about flashy demos.
-        </p>
-        <p>
-          My current obsession is <strong>quantitative trading systems</strong>: how to bring hedge-fund-grade
-          analytics within reach of retail investors without the false confidence.
-        </p>
-      </div>
-      <div class="about-card">
-        <h3>What I'm focused on</h3>
-        <ul>
-          <li><strong>MLOps</strong> — reproducible training, model versioning, serving</li>
-          <li><strong>Quantitative finance</strong> — alpha signal libraries, risk engines, regime detection</li>
-          <li><strong>LLM agents</strong> — n8n / HyperCLOVA / Solar workflows for security &amp; ops</li>
-          <li><strong>Production reliability</strong> — observability, CI gates, security review automation</li>
-        </ul>
-      </div>
-    </div>
+    <h2 class="section-title">소개</h2>
+    <p class="section-sub">
+      데이터가 들어와서 쌓이고, 모델이 돌고, 화면까지 나가는 구간을 처음부터 끝까지 직접 세워 보는 걸 주로 합니다.
+      혼자 서버를 굴리다 보니 장애를 남이 대신 찾아 주지 않아서, 고치는 일에 시간을 많이 씁니다.
+      그 과정에서 배운 것을 아래에 그대로 적었습니다. 안 된 것도 같이 적었습니다.
+    </p>
   </div>
 </section>
 
-<section id="projects" class="section section-alt">
+<section class="section section-alt" id="projects">
   <div class="container">
-    <h2 class="section-title">Featured Projects</h2>
-    <p class="section-sub">Selected work — flagship in <strong>private</strong> dev, public ones linked.</p>
+    <h2 class="section-title">만든 것</h2>
+
+    <div class="project-card flagship">
+      <div class="project-tag">SW종합설계 · 3인 팀 · 진행 중</div>
+      <h3>CHRONO</h3>
+      <p class="project-desc">
+        개인 투자자용 주식 퀀트 분석 플랫폼입니다. 2026학년도 SW종합설계 4조 과제로 시작했습니다.
+        팀장 이민성, 팀원 문지훈과 임창혁 3인 팀이고, 서버 구축과 데이터 파이프라인, 백엔드 운영을 제가 맡아 이어 가고 있습니다.
+        <br/><br/>
+        Oracle Cloud ARM 무료 티어 한 대에 Docker 컨테이너 20여 개를 올려 24시간 돌립니다.
+        KIS, DART, FRED, KOSIS, 위성, 선박 AIS 등에서 수집기 25종으로 긁어 Kafka 로 넘기고
+        PostgreSQL 에 쌓습니다. 테이블 228개, 17GB 입니다.
+        <br/><br/>
+        3년 백테스트에서 누적 +59.45%, 샤프 0.81 이 나왔습니다.
+        그런데 미래 정보 누수를 막고 Deflated Sharpe Ratio 게이트를 걸어 다시 재니
+        통계적으로 검증된 신호가 0에서 극소수였습니다.
+        그래서 좋은 숫자를 앞에 내거는 대신 판정불가를 그대로 보여주도록 만들었습니다.
+      </p>
+      <div class="chips">
+        <span class="chip chip-py">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip">Neo4j</span>
+        <span class="chip">Redis</span><span class="chip">Kafka</span><span class="chip chip-ts">Next.js 16</span>
+        <span class="chip">Docker</span><span class="chip">Caddy</span><span class="chip">ONNX Runtime</span>
+        <span class="chip chip-py">PyTorch</span><span class="chip">GitHub Actions</span>
+      </div>
+      <a class="btn" href="https://chrono-ai.mooo.com">서비스 열기</a>
+    </div>
+
     <div class="project-grid">
 
-      <article class="project-card flagship">
-        <div class="project-tag">Flagship · private</div>
-        <h3>CHRONO</h3>
+      <div class="project-card">
+        <div class="project-tag">공개 · 해커톤 결선 최우수상</div>
+        <h3>im-bank-n8n-agent</h3>
         <p class="project-desc">
-          Retail-facing quantitative trading platform. Transformer-based regime forecaster
-          (<strong>v2.3 · 56.9% OOS accuracy</strong>), 22-signal alpha library, 9-state regime detector,
-          shock detector, self-correction loop, real-time WebSocket ticks.
+          금융 보안 로그에서 개인정보를 지우고 위험도를 매기는 파이프라인입니다.
+          개인정보는 LLM 호출보다 반드시 앞에서 지웁니다. 순서를 바꾸면 원본이 외부 API 로 나갑니다.
+          26시간 돌려 12,458건을 처리했고 그 기록을 저장소에 같이 넣어 뒀습니다.
+          로그의 43.3%가 볼 필요 없는 것이었고, 소스 하나가 통째로 노이즈였습니다.
         </p>
         <div class="chips">
-          <span class="chip chip-py">FastAPI</span>
-          <span class="chip chip-ts">Next.js 16</span>
-          <span class="chip">PostgreSQL · TimescaleDB</span>
-          <span class="chip">ONNX Runtime</span>
-          <span class="chip">Docker</span>
+          <span class="chip">n8n</span><span class="chip chip-js">Express 5</span><span class="chip">SQLite</span>
+          <span class="chip chip-js">React 19</span><span class="chip">Upstage Solar</span>
         </div>
-      </article>
+        <a class="btn" href="https://github.com/jihun-moon/im-bank-n8n-agent">저장소</a>
+      </div>
 
-      <article class="project-card">
-        <div class="project-tag">private</div>
+      <div class="project-card">
+        <div class="project-tag">공개 · 네이버 클라우드 배포</div>
         <h3>PII-Guardian</h3>
         <p class="project-desc">
-          LLM-driven PII leak detection deployed on Naver Cloud — full pipeline from log ingest →
-          model inference → alerting. CI/CD, monitoring, Streamlit dashboard.
+          웹을 긁어 개인정보 노출을 찾는 NER 모델입니다.
+          정답을 손으로 달면 못 끝낸다고 보고 HyperCLOVA X 에게 라벨링을 맡겼습니다.
+          수집, 라벨링, 재학습이 서버에서 매일 한 바퀴 돕니다.
+          모델을 채점하려고 개인정보가 일부러 박힌 테스트 사이트를 직접 만들었습니다.
         </p>
         <div class="chips">
-          <span class="chip chip-py">Python</span>
-          <span class="chip">HyperCLOVA</span>
-          <span class="chip">NCP</span>
-          <span class="chip">Streamlit</span>
+          <span class="chip chip-py">Transformers</span><span class="chip">HyperCLOVA X</span>
+          <span class="chip">NCP</span><span class="chip">Streamlit</span><span class="chip">GitHub Actions</span>
         </div>
-      </article>
+        <a class="btn" href="https://github.com/jihun-moon/PII-Guardian">저장소</a>
+      </div>
 
-      <article class="project-card">
-        <div class="project-tag">public · 2025 hackathon</div>
-        <h3>
-          <a href="https://github.com/jihun-moon/im-bank-n8n-agent" target="_blank" rel="noopener">
-            AIM SecurityFlow (im-bank-n8n-agent) ↗
-          </a>
-        </h3>
+      <div class="project-card">
+        <div class="project-tag">공개 · 언리얼 엔진 5</div>
+        <h3>battle-rogue</h3>
         <p class="project-desc">
-          Self-running 24/7 security log analysis platform for IM Bank. PII detection (100% masking) →
-          Solar Pro 2 risk classification → KB learning loop → SSE live dashboard. Self-healing watchdog.
+          1대1 온라인 대전 게임입니다. 판정이 두 클라이언트에서 갈리지 않도록
+          서버 타깃을 따로 만들어 데디케이티드 서버를 붙였습니다.
+          게임 로직은 Blueprint 로 짰고, C++ 에서 한 일은 빌드 타깃 구성입니다.
         </p>
         <div class="chips">
-          <span class="chip">n8n</span>
-          <span class="chip chip-js">Node.js · Express</span>
-          <span class="chip">Upstage Solar</span>
-          <span class="chip">SQLite</span>
+          <span class="chip chip-cpp">Unreal Engine 5</span><span class="chip">Blueprint</span><span class="chip">Git LFS</span>
         </div>
-      </article>
+        <a class="btn" href="https://github.com/jihun-moon/battle-rogue">저장소</a>
+      </div>
 
-      <article class="project-card">
-        <div class="project-tag">private</div>
-        <h3>Lecture-Summarizer-AI</h3>
+      <div class="project-card">
+        <div class="project-tag">공개 · 컴퓨터그래픽스</div>
+        <h3>opengl-earthquake-simulation</h3>
         <p class="project-desc">
-          LMS lecture real-time recorder + Whisper STT + LLM summary pipeline.
-          End-to-end speech → markdown notes for students who need replay-able context.
+          학교 건물 2층을 통째로 OpenGL 프리미티브로 그린 지진 대피 시뮬레이터입니다.
+          교실, 계단, 엘리베이터, 화장실, 운동장까지 함수 81개로 직접 쌓았습니다.
+          카메라 경로를 텍스트 파일로 녹화하고 재생해서, 코드를 안 고쳐도 시연 동선이 바뀝니다.
         </p>
         <div class="chips">
-          <span class="chip chip-py">Python</span>
-          <span class="chip">OpenAI Whisper</span>
-          <span class="chip">Streamlit</span>
+          <span class="chip chip-cpp">C++</span><span class="chip">OpenGL</span><span class="chip">FreeGLUT</span>
         </div>
-      </article>
+        <a class="btn" href="https://github.com/jihun-moon/opengl-earthquake-simulation">저장소</a>
+      </div>
 
-      <article class="project-card">
-        <div class="project-tag">public · graphics</div>
-        <h3>
-          <a href="https://github.com/jihun-moon/opengl-earthquake-simulation" target="_blank" rel="noopener">
-            OpenGL Earthquake Simulation ↗
-          </a>
-        </h3>
+      <div class="project-card">
+        <div class="project-tag">공개 · 안드로이드</div>
+        <h3>mobile-doctor-app</h3>
         <p class="project-desc">
-          3D earthquake evacuation training simulator. Interactive first-person camera + cinematic
-          guide view driven by data files (camera_path_*.txt).
+          주변 병원과 약국을 지도에서 찾고 증상으로 검색하는 앱입니다.
+          영업 정보가 없는 곳을 닫힌 것으로 표시하면 갈 수 있는 병원을 놓치게 되어,
+          모름 상태를 따로 두고 마커를 세 가지로 나눴습니다.
         </p>
         <div class="chips">
-          <span class="chip chip-cpp">C++17</span>
-          <span class="chip">OpenGL</span>
-          <span class="chip">GLUT</span>
+          <span class="chip chip-java">Java</span><span class="chip">Android SDK</span><span class="chip">Google Maps</span>
         </div>
-      </article>
+        <a class="btn" href="https://github.com/jihun-moon/mobile-doctor-app">저장소</a>
+      </div>
 
-      <article class="project-card">
-        <div class="project-tag">public · multiplayer</div>
-        <h3>
-          <a href="https://github.com/jihun-moon/battle-rogue" target="_blank" rel="noopener">
-            Battle Rogue ↗
-          </a>
-        </h3>
+      <div class="project-card">
+        <div class="project-tag">공개 · 데이터 공모전</div>
+        <h3>Edu-Bridge-Library</h3>
         <p class="project-desc">
-          1v1 online fighting game with Unreal Engine 5. Dedicated server architecture with
-          authoritative simulation and anim-montage combo system. C++ + Blueprint hybrid.
+          대구 도서관 장서 373,443행을 초등 교육과정에 붙여 보는 시도입니다.
+          십진분류 번호로는 학년과 단원에 못 맞춰서, 상위 100종을 LLM 과 웹 검색으로 다시 분류했습니다.
+          그중 11종은 분류에 실패했고, 성공률로 바꿔 쓰지 않고 실패 건수로 남겼습니다.
         </p>
         <div class="chips">
-          <span class="chip">Unreal Engine 5</span>
-          <span class="chip">Blueprints</span>
-          <span class="chip chip-cpp">C++</span>
-          <span class="chip">Dedicated Server</span>
+          <span class="chip chip-py">pandas</span><span class="chip">LangChain</span><span class="chip">Tavily</span>
         </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-tag">public · android</div>
-        <h3>
-          <a href="https://github.com/jihun-moon/mobile-doctor-app" target="_blank" rel="noopener">
-            Mobile Doctor ↗
-          </a>
-        </h3>
-        <p class="project-desc">
-          Personalized medical info Android app — location-based hospital search, symptom search,
-          medical history, medication inventory. 5+ activities, RecyclerView, custom anim.
-        </p>
-        <div class="chips">
-          <span class="chip">Android</span>
-          <span class="chip chip-java">Java 17</span>
-          <span class="chip">Gradle KTS</span>
-        </div>
-      </article>
+        <a class="btn" href="https://github.com/jihun-moon/Edu-Bridge-Library">저장소</a>
+      </div>
 
     </div>
   </div>
 </section>
 
-<section id="stack" class="section">
+<section class="section" id="ncp">
   <div class="container">
-    <h2 class="section-title">Tech I Use Daily</h2>
-    <div class="stack-grid">
-      <div class="stack-cat">
-        <h4>Languages</h4>
-        <p>Python · TypeScript · SQL · Java · C++</p>
-      </div>
-      <div class="stack-cat">
-        <h4>Backend / Data</h4>
-        <p>FastAPI · PostgreSQL · TimescaleDB · Redis · n8n</p>
-      </div>
-      <div class="stack-cat">
-        <h4>ML / Inference</h4>
-        <p>PyTorch · ONNX Runtime · scikit-learn · Whisper · HyperCLOVA · Upstage Solar</p>
-      </div>
-      <div class="stack-cat">
-        <h4>Frontend</h4>
-        <p>Next.js · React · TailwindCSS</p>
-      </div>
-      <div class="stack-cat">
-        <h4>Infra / DevOps</h4>
-        <p>Docker · Kubernetes · GitHub Actions · AWS · NCP · Terraform</p>
-      </div>
-      <div class="stack-cat">
-        <h4>Observability</h4>
-        <p>Prometheus · Grafana · Sentry</p>
-      </div>
+    <h2 class="section-title">네이버 클라우드 실습</h2>
+    <p class="section-sub">
+      대구대학교와 네이버 클라우드가 함께 연 DANCE 교육 과정 1기를 수료했습니다.
+      2025년 10월 29일부터 11월 21일까지 12일차 과정이고 콘솔 실습 비중이 큽니다.
+      마지막 미니 프로젝트로 2-Tier 구성을 직접 세웠습니다.
+      Multi AZ 에 웹 서버 두 대를 두고 ALB 로 묶고, DB 를 Master 와 Standby 로 이중화하고,
+      ACG 인바운드 규칙으로 DB 접근을 웹 서버 서브넷으로만 제한했습니다.
+      웹 서버는 Private Subnet 에 두고 외부 진입은 ALB 하나로 모았습니다.
+      과정 끝에 NCA 자격증을 땄습니다.
+    </p>
+    <div class="chips">
+      <span class="chip">VPC</span><span class="chip">Subnet</span><span class="chip">Route Table</span>
+      <span class="chip">VPC Peering</span><span class="chip">NAT Gateway</span><span class="chip">NACL</span>
+      <span class="chip">IPsec VPN</span><span class="chip">ALB</span><span class="chip">NLB</span>
+      <span class="chip">Object Storage</span><span class="chip">NAS</span><span class="chip">Cloud DB</span>
+      <span class="chip">Cloud Insight</span><span class="chip">Cloud Log Analytics</span>
+      <span class="chip">AutoScaling</span><span class="chip">ACG</span>
     </div>
   </div>
 </section>
 
-<section id="principles" class="section section-alt">
+<section class="section section-alt" id="ops">
   <div class="container">
-    <h2 class="section-title">Engineering Principles</h2>
+    <h2 class="section-title">서버 굴리면서 겪은 것</h2>
+
     <div class="principles">
       <div class="principle">
-        <h4>Boundaries over abstractions</h4>
-        <p>Validate at I/O edges, trust the core. Don't invent error handling for cases that can't happen.</p>
+        <h3>크론이 12줄에서 4줄로 잘려 있었다</h3>
+        <p>
+          수집이 멈춰 있어서 봤더니 crontab 이 4줄만 남아 있었습니다.
+          더 나빴던 건 백업에서 되살리는 자동 복원 스크립트가 잘린 쪽을 정상으로 알고
+          매일 덮어쓰고 있었다는 점입니다. 두 달 동안 그렇게 돌았습니다.
+          복원 전에 줄 수를 먼저 비교하고, 줄어들었으면 덮어쓰지 않고 알림만 보내도록 고쳤습니다.
+        </p>
       </div>
       <div class="principle">
-        <h4>Reproducibility first</h4>
-        <p>Every model, every dataset, every deploy is versioned and traceable.</p>
+        <h3>API 가 73분 멈췄는데 아무도 안 움직였다</h3>
+        <p>
+          감지는 되고 있었고 로그에도 남아 있었습니다.
+          그런데 재기동을 맡은 워치독이 두 달 전부터 같이 죽어 있었습니다.
+          알림 조건도 error 레벨만 보내게 돼 있어서 사람한테도 안 갔습니다.
+          감시하는 쪽이 살아 있는지 확인하는 절차를 따로 두었습니다.
+        </p>
       </div>
       <div class="principle">
-        <h4>Observability before scale</h4>
-        <p>No logs / metrics / traces, no production. Period.</p>
-      </div>
-      <div class="principle">
-        <h4>Automate the boring guardrails</h4>
-        <p>Pre-commit hooks, CI gates, security scans, dependency review — let machines catch what humans forget.</p>
-      </div>
-      <div class="principle">
-        <h4>Honest metrics &gt; pretty demos</h4>
-        <p>OOS over IS, ablations over cherry-picked screenshots.</p>
-      </div>
-      <div class="principle">
-        <h4>Boring, working things</h4>
-        <p>Simple infrastructure with strong primitives beats clever abstractions every time.</p>
+        <h3>한 줄 때문에 천 줄이 사라졌다</h3>
+        <p>
+          executemany 로 1,000행씩 넣는데 한 행이 제약에 걸리면 배치 전체가 롤백됐습니다.
+          auto-commit 이라 되돌릴 것도 없이 그날 데이터가 없었습니다.
+          실패한 배치는 행 단위로 다시 넣도록 바꾸고 빠진 구간을 채웠습니다.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="contact" class="section">
-  <div class="container contact-container">
-    <h2 class="section-title">Let's talk</h2>
+<section class="section" id="stack">
+  <div class="container">
+    <h2 class="section-title">쓴 것</h2>
+    <p class="section-sub">실제로 써 본 것만 적었습니다. 쿠버네티스와 테라폼은 운영해 본 적이 없어서 뺐습니다.</p>
+    <div class="stack-grid">
+      <div class="stack-cat">
+        <h3>언어</h3>
+        <div class="chips">
+          <span class="chip chip-py">Python</span><span class="chip chip-ts">TypeScript</span>
+          <span class="chip chip-java">Java</span><span class="chip chip-cpp">C++</span><span class="chip">SQL</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3>백엔드 · 데이터</h3>
+        <div class="chips">
+          <span class="chip">FastAPI</span><span class="chip">Express</span><span class="chip">PostgreSQL</span>
+          <span class="chip">Neo4j</span><span class="chip">Redis</span><span class="chip">SQLite</span><span class="chip">Kafka</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3>프런트</h3>
+        <div class="chips">
+          <span class="chip chip-ts">Next.js</span><span class="chip chip-js">React</span><span class="chip">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3>머신러닝</h3>
+        <div class="chips">
+          <span class="chip chip-py">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span>
+          <span class="chip">ONNX Runtime</span><span class="chip">Transformers</span><span class="chip">Whisper</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3>LLM</h3>
+        <div class="chips">
+          <span class="chip">HyperCLOVA X</span><span class="chip">Upstage Solar</span>
+          <span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">LangChain</span>
+        </div>
+      </div>
+      <div class="stack-cat">
+        <h3>인프라 · 운영</h3>
+        <div class="chips">
+          <span class="chip">Docker</span><span class="chip">Docker Compose</span><span class="chip">Caddy</span>
+          <span class="chip">GitHub Actions</span><span class="chip">Naver Cloud</span><span class="chip">Oracle Cloud</span>
+          <span class="chip">Linux</span><span class="chip">cron</span><span class="chip">systemd</span>
+          <span class="chip">Sentry</span><span class="chip">n8n</span><span class="chip">PM2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="contact">
+  <div class="contact-container container">
+    <h2 class="section-title">자격 · 수상 · 연락</h2>
     <p class="contact-lead">
-      개발자 채용 / 협업 / 멘토링 / 단순 호기심 — 어떤 이유든 환영입니다.
+      NCA (Naver Cloud Certified Associate) · 2025 대구울산경북 AI Agent 해커톤 결선 최우수상 ·
+      대구대학교 네이버 클라우드 DANCE 교육 과정 1기 수료
     </p>
     <div class="contact-grid">
-      <a class="contact-card" href="mailto:jihun0948@naver.com">
-        <span class="contact-key">Email</span>
-        <span class="contact-val">jihun0948@naver.com</span>
-      </a>
-      <a class="contact-card" href="https://github.com/jihun-moon" target="_blank" rel="noopener">
-        <span class="contact-key">GitHub</span>
-        <span class="contact-val">@jihun-moon</span>
-      </a>
-      <a class="contact-card" href="https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link" target="_blank" rel="noopener">
-        <span class="contact-key">Notion</span>
-        <span class="contact-val">My Knowledge Hub</span>
-      </a>
-      <a class="contact-card" href="https://github.com/jihun-moon/jihun-moon/discussions" target="_blank" rel="noopener">
-        <span class="contact-key">Discussions</span>
-        <span class="contact-val">Open Q&amp;A</span>
-      </a>
+      <div class="contact-card"><div class="contact-key">메일</div><div class="contact-val"><a href="mailto:jihun0948@naver.com">jihun0948@naver.com</a></div></div>
+      <div class="contact-card"><div class="contact-key">GitHub</div><div class="contact-val"><a href="https://github.com/jihun-moon">jihun-moon</a></div></div>
+      <div class="contact-card"><div class="contact-key">기록</div><div class="contact-val"><a href="https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link">Notion</a></div></div>
+      <div class="contact-card"><div class="contact-key">지역</div><div class="contact-val">대구</div></div>
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="container footer-inner">
-    <span>© <span id="year"></span> Jihun Moon · 대구대학교 컴퓨터소프트웨어</span>
-    <span>Built with ❤︎ on GitHub Pages · Source: <a href="https://github.com/jihun-moon/jihun-moon">/jihun-moon</a></span>
+  <div class="footer-inner container">
+    <span>문지훈 · 대구대학교 컴퓨터소프트웨어학부</span>
+    <span>전공 평점 3.80 / 4.50 · 전체 3.85 / 4.50 · 취득 128학점 (4학년 1학기까지)</span>
   </div>
 </footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-// Smooth scroll for in-page links
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const id = a.getAttribute('href').slice(1);
-    const el = document.getElementById(id);
-    if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-  });
-});
-</script>
 
 </body>
 </html>
