@@ -1,142 +1,125 @@
-<h1 align="center">문지훈 · Jihun Moon</h1>
+# 문지훈
+
+대구대학교 컴퓨터소프트웨어학부 4학년입니다.
+
+데이터를 받아서 쌓고, 모델을 돌리고, 화면까지 내보내는 구간을 처음부터 끝까지 직접 세워 보는 걸
+주로 하고 있습니다. 지금은 개인 서버 한 대에서 프로젝트 하나를 넉 달째 상시로 굴리는 중이고,
+그 과정에서 만난 장애를 고치는 일이 코드를 새로 쓰는 일보다 많습니다.
+
+* 메일 [jihun0948@naver.com](mailto:jihun0948@naver.com)
+* 기록 [Notion Knowledge Hub](https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link)
+* 대구
+
+<br/>
+
+## 만든 것
+
+### CHRONO (비공개, 졸업작품)
+
+국내 주식과 코인 데이터를 모아서 분석하고 매매 판단까지 붙이는 개인 프로젝트입니다.
+2026년 5월에 시작해서 지금까지 서버 한 대에서 계속 돌고 있습니다.
+
+* FastAPI + PostgreSQL + Redis, 프런트는 Next.js 16 / React 19
+* Docker Compose 로 서비스 20여 개를 한 박스에 올려서 운영
+* 국내 상장 3,950종목 일봉, 나스닥 4,460종목, 코인 22심볼 3거래소, 뉴스 74만 건을 수집
+* 테이블 228개, 적재 데이터 17GB
+* 추론은 ONNX Runtime, 학습은 PyTorch CPU 와 XGBoost
+* GitHub Actions 13개로 CI, E2E, 부하 테스트, Lighthouse, 시크릿 스캔, SBOM 생성, 릴리스 태깅을 자동화
+
+만들면서 얻은 결론 중에 제일 큰 건 **가격의 방향은 예측되지 않는다**는 것이었습니다.
+축 45개를 다 넣어도 라벨을 무작위로 섞은 대조군 성능을 넘지 못했습니다.
+그래서 방향을 맞히는 쪽을 접고, 손절과 익절을 어디에 두느냐로 기대값이 달라지는 부분만 남겼습니다.
+지표가 좋아 보이면 일단 라벨을 섞어서 다시 돌려 보는 습관이 여기서 생겼습니다.
+
+### PII-Guardian (비공개)
+
+웹 페이지를 긁어서 개인정보 노출을 찾아내는 모델을 만들고, 네이버 클라우드에 올려 둔 프로젝트입니다.
+
+* 크롤러가 수집 → HyperCLOVA X 로 정답 라벨을 자동 생성 → NER 모델 재학습, 이렇게 한 바퀴가 돌아갑니다
+* 라벨링을 사람이 하면 못 끝낸다고 보고 LLM 에게 맡긴 게 이 프로젝트의 핵심입니다
+* GitHub Actions 에서 NCP 서버로 SSH 배포
+* 학습 서버 요금을 줄이려고 서버를 내려 두고, 필요한 시간에만 NCP API 로 인스턴스를 깨우는 워크플로를 따로 뒀습니다
+* 모델을 채점하려고 개인정보가 일부러 박힌 테스트 사이트를 직접 만들어서 재현율을 쟀습니다
+
+### [im-bank-n8n-agent](https://github.com/jihun-moon/im-bank-n8n-agent)
+
+금융 보안 로그를 받아서 개인정보를 지우고 위험도를 매기는 파이프라인입니다.
+2025 AI Agent 해커톤 출품작이고 결선 최우수상을 받았습니다.
+
+* n8n 워크플로 7개, 백엔드는 Express + SQLite, 대시보드는 SSE 로 실시간 갱신
+* 위험도 판정에 Upstage Solar Pro 2 사용
+* 로그를 큐에 먼저 넣고 워커가 하나씩 꺼내 가는 구조로 바꾼 뒤에 유실이 없어졌습니다
+* 개인정보가 남아 있는 로그는 학습에서 빼고, 마스킹된 것만 KB 에 넣도록 나눴습니다
+
+### 그 밖에
+
+| 저장소 | 무엇 |
+|---|---|
+| [battle-rogue](https://github.com/jihun-moon/battle-rogue) | 언리얼 엔진 5 로 만든 1대1 온라인 대전 게임. 데디케이티드 서버 구성 |
+| [opengl-earthquake-simulation](https://github.com/jihun-moon/opengl-earthquake-simulation) | C++ 와 OpenGL 로 만든 지진 대피 훈련 3D 시뮬레이터 |
+| [mobile-doctor-app](https://github.com/jihun-moon/mobile-doctor-app) | 위치 기반 병원 검색과 진료 기록 관리 안드로이드 앱 (Java) |
+| [Edu-Bridge-Library](https://github.com/jihun-moon/Edu-Bridge-Library) | 2025 도서관 데이터 활용 공모전. 초등 교육과정과 대구 도서관 데이터를 붙인 도서 추천 제안 |
+| Lecture-Summarizer-AI (비공개) | LMS 강의를 스테레오 믹스로 녹음해서 Whisper 로 받아쓰고 요약 |
+| eth-autotrade-bot (비공개) | CHRONO 이전에 만든 자동매매 봇. 전략 후보를 만들고 섀도로 돌려 본 뒤 교체하는 구조 |
+
+<br/>
+
+## 서버 굴리면서 겪은 것
+
+혼자 운영하다 보니 장애를 남이 대신 찾아 주지 않습니다. 기억에 남는 세 건입니다.
+
+**크론이 12줄에서 4줄로 잘려 있었다.**
+어느 날 수집이 멈춰 있길래 봤더니 crontab 이 4줄만 남아 있었습니다.
+더 나빴던 건 백업에서 되살리는 자동 복원 스크립트가 있었는데, 그게 잘린 쪽을 정상으로 알고
+매일 덮어쓰고 있었다는 점입니다. 두 달 동안 그렇게 돌았습니다.
+복원 전에 줄 수를 먼저 비교하고, 줄어들었으면 덮어쓰지 않고 알림만 보내도록 고쳤습니다.
+**백업은 있는 것보다 맞는 것을 넣었는지가 중요하다**는 걸 여기서 배웠습니다.
+
+**API 가 73분 멈췄는데 아무도 안 움직였다.**
+감지는 되고 있었습니다. 로그에도 남아 있었습니다. 그런데 재기동을 맡은 워치독이
+두 달 전부터 같이 죽어 있어서 아무 일도 일어나지 않았습니다.
+알림 채널 조건이 error 레벨만 보내게 돼 있어서 사람한테도 안 갔습니다.
+감시하는 쪽이 살아 있는지 확인하는 절차를 따로 두고, 알림 조건을 다시 잡았습니다.
+
+**한 줄 때문에 천 줄이 사라졌다.**
+`executemany` 로 1,000행씩 넣고 있었는데, 중간에 한 행이 제약에 걸리면 배치 전체가 롤백됐습니다.
+auto-commit 이라 되돌릴 것도 없이 그냥 그날 데이터가 없었습니다.
+실패한 배치는 행 단위로 다시 넣도록 바꾸고, 빠진 구간을 찾아서 다시 채웠습니다.
+
+<br/>
+
+## 쓴 것
+
+써 본 것만 적었습니다. 괄호 안은 실제로 쓴 곳입니다.
+
+* **언어** Python (CHRONO, PII-Guardian), TypeScript (CHRONO 프런트), Java (안드로이드 앱), C++ (OpenGL), SQL
+* **백엔드** FastAPI, Express, PostgreSQL, Redis, SQLite
+* **프런트** Next.js, React, Tailwind CSS
+* **ML** PyTorch, scikit-learn, XGBoost, ONNX Runtime, HuggingFace NER 파인튜닝, OpenAI Whisper
+* **LLM** HyperCLOVA X (자동 라벨링), Upstage Solar Pro 2 (로그 위험도 판정)
+* **인프라** Docker, Docker Compose, GitHub Actions, 네이버 클라우드 플랫폼, Linux, cron, systemd
+* **운영** Sentry, 자체 헬스체크와 알림 디스패처, n8n
+
+쿠버네티스와 테라폼은 아직 실제로 운영해 본 적이 없어서 뺐습니다.
+
+<br/>
+
+## 자격 · 수상
+
+* NCA (Naver Cloud Platform Certified Associate)
+* 2025 AI Agent 해커톤 결선 최우수상 (팀 AIM)
+* 2025 도서관 데이터 활용 공모전 참가
+
+<br/>
+
+## 학교
+
+대구대학교 컴퓨터소프트웨어학부, 2026년 8월 기준 4학년 1학기까지 이수.
+전공 평점 3.80 / 4.50, 전체 평점 3.85 / 4.50, 취득 학점 128.
+수업 과제와 실습은 [daegu-univ-cs](https://github.com/jihun-moon/daegu-univ-cs) 에 모아 두고 있습니다.
+
+<br/>
 
 <p align="center">
-  <em>Designing and shipping production-grade AI / data systems — model, service, pipeline, infra.</em>
-</p>
-
-<p align="center">
-  <a href="mailto:jihun0948@naver.com"><img src="https://img.shields.io/badge/Email-jihun0948@naver.com-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
-  <a href="https://www.notion.so/My-Knowledge-Hub-27772d9f979f80569662de9c2e49399d?source=copy_link"><img src="https://img.shields.io/badge/Knowledge_Hub-Notion-000000?style=flat-square&logo=notion&logoColor=white"/></a>
-  <img src="https://img.shields.io/badge/Daegu,_KR-📍-1f6feb?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Focus-MLOps_·_Quant_·_LLM_Agents-7B42BC?style=flat-square"/>
-  <img src="https://komarev.com/ghpvc/?username=jihun-moon&label=Profile%20views&color=0e75b6&style=flat-square"/>
-</p>
-
----
-
-### About
-
-End-to-end builder. I take ML/data products from a notebook prototype to a deployed, observable service — covering model training, inference serving, ingest pipelines, CI/CD, and monitoring.
-
-Currently building **CHRONO**, a retail-facing quantitative trading platform that aims to bring hedge-fund-grade analytics within reach: a Transformer-based regime forecaster, a 22-signal alpha library, and a Markowitz + VaR risk engine — all wrapped in a real-time, observable stack.
-
-> **What I optimize for:** production reliability · data correctness · observable systems · honest metrics over flashy demos.
-
----
-
-### Featured Work
-
-| Project | Stack | Highlights |
-|---|---|---|
-| **CHRONO** &nbsp;<sub>private</sub> | FastAPI · Next.js 16 · PostgreSQL / TimescaleDB · ONNX Runtime · Docker · GitHub Actions | Transformer **v2.3 (56.9% OOS)** · 22 alpha signals · 9-state regime detector · shock detector · self-correction loop · real-time WS ticks |
-| **PII-Guardian** &nbsp;<sub>private</sub> | Python · HyperCLOVA · NCP · Streamlit · CI/CD | LLM-driven PII leak detection deployed on Naver Cloud — full pipeline from log ingest → model inference → alerting |
-| **[im-bank-n8n-agent](https://github.com/jihun-moon/im-bank-n8n-agent)** | n8n · Node.js · Upstage Solar AI | Real-time security log analyzer & auto-learning agent for IM Bank — workflow-driven LLM ops |
-| **Lecture-Summarizer-AI** &nbsp;<sub>private</sub> | Python · OpenAI Whisper · Streamlit | LMS 강의 실시간 녹음 + Whisper STT + LLM 요약 파이프라인 |
-| **[opengl-earthquake-simulation](https://github.com/jihun-moon/opengl-earthquake-simulation)** | C++ · OpenGL | 3D 지진 대피 교육 시뮬레이터 — 인터랙티브 카메라 + 시네마틱 가이드 뷰 |
-| **[battle-rogue](https://github.com/jihun-moon/battle-rogue)** | Unreal Engine 5 · Blueprints · Dedicated Server | 1:1 온라인 대전 격투 게임 — UE5 데디케이티드 서버 |
-
----
-
-### Tech I Use Daily
-
-<table>
-  <tr>
-    <td><b>Languages</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-      <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white"/>
-      <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Backend / Data</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
-      <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white"/>
-      <img src="https://img.shields.io/badge/TimescaleDB-FDB515?style=flat-square&logo=timescale&logoColor=black"/>
-      <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
-      <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td><b>ML / Inference</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
-      <img src="https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white"/>
-      <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Whisper-412991?style=flat-square&logo=openai&logoColor=white"/>
-      <img src="https://img.shields.io/badge/HyperCLOVA-03C75A?style=flat-square&logo=naver&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Frontend</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-      <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Infra / DevOps</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"/>
-      <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"/>
-      <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white"/>
-      <img src="https://img.shields.io/badge/NCP-03C75A?style=flat-square&logo=naver&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Observability</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"/>
-    </td>
-  </tr>
-</table>
-
----
-
-### Engineering Principles
-
-- **Boundaries over abstractions** — validate at I/O edges, trust the core. Don't add error handling for things that can't happen.
-- **Reproducibility first** — every model, every dataset, every deploy is versioned and traceable.
-- **Observability before scale** — no logs / metrics / traces, no production.
-- **Automate the boring guardrails** — pre-commit hooks, CI gates, security scans, dependency review.
-- **Honest metrics > pretty demos** — OOS over IS, ablations over cherry-picked screenshots.
-
----
-
-### GitHub Stats
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=jihun-moon&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=jihun-moon&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8" alt="GitHub Trophies"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jihun-moon&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" alt="Activity graph"/>
-</p>
-
----
-
-### Contribution Snake
-
-<p align="center">
-  <img alt="snake animation" src="https://raw.githubusercontent.com/jihun-moon/jihun-moon/output/github-contribution-grid-snake.svg" />
-</p>
-
----
-
-<p align="center">
-  <sub>대구대학교 컴퓨터소프트웨어 · ML / Data Systems · Daegu, South Korea</sub>
-  <br/>
-  <sub>README · stats · snake animation are auto-refreshed daily via GitHub Actions.</sub>
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/jihun-moon/jihun-moon/output/github-contribution-grid-snake.svg" />
 </p>
