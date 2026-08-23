@@ -86,7 +86,7 @@ Claude Haiku 가 실패하면 Gemini 2.5 키 3개를 돌리고, 그것도 안 �
 ### [im-bank-n8n-agent](https://github.com/jihun-moon/im-bank-n8n-agent)
 
 금융 보안 로그에서 개인정보를 지우고 위험도를 매기는 파이프라인입니다.
-2025 대구울산경북 AI Agent 해커톤 출품작이고 결선 최우수상을 받았습니다.
+대구대학교 AI·SW Agent 해커톤 경진대회 출품작이고 최우수상을 받았습니다.
 
 * n8n 워크플로 노드 43개, 백엔드는 Express 5 + SQLite, 대시보드는 SSE 로 실시간 갱신
 * 위험도 판정에 Upstage Solar Pro 2, 실패하면 Gemini 로 넘어갑니다
@@ -179,7 +179,7 @@ auto-commit 이라 되돌릴 것도 없이 그냥 그날 데이터가 없었습�
 ## 자격 · 수상
 
 * NCA (Naver Cloud Certified Associate)
-* 2025 대구울산경북 AI Agent 해커톤 결선 최우수상 (팀 AIM)
+* 대구대학교 AI·SW Agent 해커톤 경진대회 최우수상 (팀 AIM)
 * 대구대학교 네이버 클라우드 DANCE 교육 과정 1기 수료
 * 2025 도서관 데이터 활용 공모전 참가
 
