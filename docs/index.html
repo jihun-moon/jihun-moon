@@ -42,8 +42,8 @@
     </p>
     <div class="hero-stats">
       <div><div class="stat-num">3.85</div><div class="stat-label">전체 평점 / 4.50</div></div>
-      <div><div class="stat-num">13</div><div class="stat-label">저장소</div></div>
-      <div><div class="stat-num">20+</div><div class="stat-label">상시 가동 컨테이너</div></div>
+      <div><div class="stat-num">15</div><div class="stat-label">저장소</div></div>
+      <div><div class="stat-num">18</div><div class="stat-label">상시 가동 컨테이너</div></div>
       <div><div class="stat-num">NCA</div><div class="stat-label">네이버 클라우드 자격</div></div>
     </div>
     <div class="hero-cta">
@@ -76,14 +76,15 @@
         개인 투자자용 주식 퀀트 분석 플랫폼입니다. 2026학년도 SW종합설계 4조 과제로 시작했습니다.
         팀장 이민성, 팀원 문지훈과 임창혁 3인 팀이고, 서버 구축과 데이터 파이프라인, 백엔드 운영을 제가 맡아 이어 가고 있습니다.
         <br/><br/>
-        Oracle Cloud ARM 무료 티어 한 대에 Docker 컨테이너 20여 개를 올려 24시간 돌립니다.
-        KIS, DART, FRED, KOSIS, 위성, 선박 AIS 등에서 수집기 25종으로 긁어 Kafka 로 넘기고
-        PostgreSQL 에 쌓습니다. 테이블 228개, 17GB 입니다.
+        Oracle Cloud ARM 무료 티어 한 대에 Docker 컨테이너 18개를 올려 24시간 돌립니다.
+        KIS, DART, FRED, KOSIS, 위성, 선박 AIS 등에서 긁어 Kafka 로 넘기고
+        PostgreSQL 에 쌓습니다. 테이블 227개, 18GB 입니다.
         <br/><br/>
-        3년 백테스트에서 누적 +59.45%, 샤프 0.81 이 나왔습니다.
-        그런데 미래 정보 누수를 막고 Deflated Sharpe Ratio 게이트를 걸어 다시 재니
-        통계적으로 검증된 신호가 0에서 극소수였습니다.
-        그래서 좋은 숫자를 앞에 내거는 대신 판정불가를 그대로 보여주도록 만들었습니다.
+        백테스트 숫자는 좋게 나왔습니다. 그런데 미래 정보 누수를 막고,
+        다중비교를 보정하고, 거래비용을 빼고 다시 재니 남는 게 없었습니다.
+        판정 원장에 국내주식 231칸이 쌓여 있는데 표본 기준을 넘은 게 21칸,
+        다중비교 보정을 통과한 게 8칸, 비용을 빼고도 양수인 게 0칸입니다.
+        그래서 좋은 숫자를 앞에 내거는 대신 그 0 을 화면에 그대로 띄웁니다.
       </p>
       <div class="chips">
         <span class="chip chip-py">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip">Neo4j</span>
@@ -185,7 +186,7 @@
       </div>
 
       <div class="project-card">
-        <div class="project-tag">공개 · 자동매매</div>
+        <div class="project-tag">공개 · 무중단 전략 교체</div>
         <h3>eth-autotrade-bot</h3>
         <p class="project-desc">
           CHRONO 이전에 만든 이더리움 선물 봇입니다.
