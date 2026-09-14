@@ -43,7 +43,7 @@
     <div class="hero-stats">
       <div><div class="stat-num">3.85</div><div class="stat-label">전체 평점 / 4.50</div></div>
       <div><div class="stat-num">10</div><div class="stat-label">공개 저장소</div></div>
-      <div><div class="stat-num">18</div><div class="stat-label">상시 가동 컨테이너</div></div>
+      <div><div class="stat-num">19</div><div class="stat-label">상시 가동 컨테이너 (2026-09-14)</div></div>
       <div><div class="stat-num">NCA</div><div class="stat-label">네이버 클라우드 자격</div></div>
     </div>
     <div class="hero-cta">
@@ -80,9 +80,10 @@
         과목이 끝난 2026-06-09 뒤로는 모은 신호가 실제로 맞는지 재는 판정 원장을 제가 따로 만들었고, 서버 운영도 이어 가고 있습니다.
         2026-09-11 에 이 작품으로 팀이 대구대학교 AI·SW 캡스톤디자인 공모전 우수상을 받았습니다(<a href="https://aisw.daegu.ac.kr/article/notice25/detail/225770">결과 공지</a>).
         <br/><br/>
-        Oracle Cloud ARM 무료 티어 한 대에 Docker 컨테이너 18개를 올려 24시간 돌립니다.
-        KIS, DART, FRED, KOSIS, 위성, 선박 AIS 등에서 긁어 Kafka 로 넘기고
-        PostgreSQL 에 쌓습니다. 테이블 227개, 18GB 입니다.
+        Oracle Cloud ARM 무료 티어 한 대에 Docker 컨테이너 19개(2026-09-14 기준)를 올려 24시간 돌립니다. 공개 화면은 capstone-frontend 가 받습니다.
+        KIS, DART, FRED, KOSIS, 선박 AIS 등에서 긁어 Kafka 로 넘기고
+        PostgreSQL 에 쌓습니다. 위성 열화상과 Polymarket 은 2026-07-20, 2026-08-20 적재를 마지막으로 수집을 껐습니다.
+        테이블 228개, 19GB 입니다(2026-09-14 기준, 운영 DB 전체를 센 값).
         <br/><br/>
         백테스트 숫자는 좋게 나왔습니다. 그런데 미래 정보 누수를 막고,
         다중비교를 보정하고, 거래비용을 빼고 다시 재니 남는 게 없었습니다.
@@ -195,8 +196,8 @@
         <p class="project-desc">
           CHRONO 이전에 만든 이더리움 선물 봇입니다.
           전략을 짜는 것보다 안전하게 바꾸는 절차를 만드는 데 시간을 더 썼습니다.
-          후보 전략을 돈 없이 같은 시장에 태워 보고, 그때도 나으면 importlib 으로 봇을 끄지 않고 교체합니다.
-          투입 결정은 사람이 텔레그램에서 승인합니다. 실전 투입 전에 멈췄습니다.
+          처음엔 후보 전략을 돈 없이 같은 시장에 태워 봤는데, 2026-02-23 에 그 섀도 루프를 뺐습니다.
+          그 뒤로는 백테스트 리포트를 보고 사람이 텔레그램에서 승인하면 importlib 으로 봇을 끄지 않고 교체했습니다. 실전 투입 전에 멈췄습니다.
         </p>
         <div class="chips">
           <span class="chip chip-py">Python</span><span class="chip">Docker</span>
@@ -209,7 +210,7 @@
         <div class="project-tag">공개 · 개인 도구</div>
         <h3>Lecture-Summarizer-AI</h3>
         <p class="project-desc">
-          온라인 강의 소리를 스테레오 믹스로 받아 Whisper 로 받아씁니다. 이름과 달리 요약 기능은 아직 못 붙였습니다.
+          온라인 강의 소리를 기본 스피커의 루프백 장치(soundcard)로 받아 Whisper 로 받아씁니다. 이름과 달리 요약 기능은 아직 못 붙였습니다.
           마이크로 받으면 주변 소음이 섞이고 이어폰을 쓰면 아무것도 안 잡혀서,
           컴퓨터가 재생 중인 소리를 그대로 되돌려 주는 장치를 씁니다.
         </p>

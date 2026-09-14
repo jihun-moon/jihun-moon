@@ -27,11 +27,11 @@ Kafka 서버 구축은 이민성과 나눠 맡았고, DB 서버와 클라우드 
 
 **인프라**
 
-Oracle Cloud ARM 무료 티어 한 대(Ubuntu 22.04)에 Docker 컨테이너 18개를 올려서 24시간 운영합니다.
+Oracle Cloud ARM 무료 티어 한 대(Ubuntu 22.04)에 Docker 컨테이너 19개(2026-09-14 기준)를 올려서 24시간 운영합니다.
 
 | 영역 | 컨테이너 |
 |---|---|
-| 서비스 | `team-frontend`, `team-api` |
+| 서비스 | `capstone-frontend`(공개 화면), `team-frontend`(비공개 개인 화면), `team-api` |
 | 데이터 | `team-producer`, `team-consumer`, `team-analyzer` |
 | 저장소 | `team-postgres`, `team-neo4j`, `team-redis` |
 | 메시지 | `team-kafka`, `team-zookeeper` |
@@ -43,9 +43,10 @@ CI, E2E, 부하 테스트, Lighthouse, 시크릿 스캔, SBOM 생성, Dependabot
 
 **데이터**
 
-KIS, DART, FRED, KOSIS, KIPRIS, NASA FIRMS 위성 열화상, 선박 AIS, 네이버뉴스, Polymarket 등에서
+KIS, DART, FRED, KOSIS, 선박 AIS, 네이버뉴스 등에서
 긁어옵니다. Kafka 로 넘기고 PostgreSQL 15 에 쌓습니다.
-종목 관계는 Neo4j 5 에, 캐시는 Redis 7 에 둡니다. 테이블 227개, 적재 데이터 18GB 입니다.
+KIPRIS 특허, NASA FIRMS 위성 열화상, Polymarket 도 받았지만 지금은 수집을 껐습니다. 마지막 적재일은 각각 2026-06-15, 2026-07-20, 2026-08-20 입니다. `team-polymarket-alert-dispatcher` 는 떠 있지만 보낼 후보가 없습니다.
+종목 관계는 Neo4j 5 에, 캐시는 Redis 7 에 둡니다. 테이블 228개, DB 크기 19GB 입니다(2026-09-14 기준, 제출용 스키마가 아니라 운영 DB 전체를 센 값).
 
 **모델**
 
@@ -103,10 +104,10 @@ LLM 은 한 곳이 죽어도 멈추지 않게 4단계 폴백으로 묶었습니�
 |---|---|
 | [battle-rogue](https://github.com/jihun-moon/battle-rogue) | 언리얼 엔진 5 1대1 온라인 대전 게임. 데디케이티드 서버 타깃을 따로 만들어 붙였습니다 |
 | [opengl-earthquake-simulation](https://github.com/jihun-moon/opengl-earthquake-simulation) | C++ 와 OpenGL 로 학교 건물 2층을 통째로 그린 지진 대피 시뮬레이터. 2,047줄. 3인 팀에서 1인칭 카메라와 대피 경로 재생을 맡았습니다 |
-| [mobile-doctor-app](https://github.com/jihun-moon/mobile-doctor-app) | 위치 기반 병원 검색과 복약 관리 안드로이드 앱 (Java) |
+| [mobile-doctor-app](https://github.com/jihun-moon/mobile-doctor-app) | 위치 기반 병원 검색, 증상으로 약 검색, 진료 이력 기록을 넣은 안드로이드 앱 (Java) |
 | [Edu-Bridge-Library](https://github.com/jihun-moon/Edu-Bridge-Library) | 2025 도서관 데이터 활용 공모전. 장서 373,443행 중 대출 상위 100종을 초등 교육과정에 붙여 봤고 11종은 분류에 실패했습니다 |
-| [Lecture-Summarizer-AI](https://github.com/jihun-moon/Lecture-Summarizer-AI) | 온라인 강의 소리를 스테레오 믹스로 받아 Whisper 로 받아쓰는 도구. 이름과 달리 요약은 아직 없습니다. 윈도우 전용 |
-| [eth-autotrade-bot](https://github.com/jihun-moon/eth-autotrade-bot) | CHRONO 이전에 만든 자동매매 봇. 후보 전략을 섀도로 먼저 돌려 보고 교체하는 구조. 실전 투입 전에 멈췄습니다 |
+| [Lecture-Summarizer-AI](https://github.com/jihun-moon/Lecture-Summarizer-AI) | 온라인 강의 소리를 기본 스피커의 루프백 장치(soundcard, `include_loopback=True`)로 받아 Whisper 로 받아쓰는 도구. 이름과 달리 요약은 아직 없습니다. 윈도우 전용 |
+| [eth-autotrade-bot](https://github.com/jihun-moon/eth-autotrade-bot) | CHRONO 이전에 만든 자동매매 봇. 처음엔 후보 전략을 섀도로 같이 돌려 봤는데 2026-02-23 에 그 루프를 뺐고, 그 뒤로는 백테스트 리포트를 텔레그램에서 승인하면 교체했습니다. 실전 투입 전에 멈췄습니다 |
 
 <br/>
 
