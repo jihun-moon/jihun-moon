@@ -27,7 +27,7 @@
 | [eth-autotrade-bot](https://github.com/jihun-moon/eth-autotrade-bot) | CHRONO 이전에 만든 자동매매 봇. 실전 투입 전에 멈췄습니다 |
 | [daegu-univ-cs](https://github.com/jihun-moon/daegu-univ-cs) | 수업 과제와 실습 모음 |
 
-구조, 수치, 안 된 것은 각 저장소 README 와 포트폴리오 페이지에 적어 두었습니다.
+구조, 수치, 안 된 것은 각 저장소 README 와 노션에 적어 두었습니다.
 
 <br/>
 
