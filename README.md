@@ -26,17 +26,25 @@
 
 | 프로젝트 | 무엇 |
 |---|---|
-| **CHRONO** (비공개 저장소, 서비스는 2026-10 전시 뒤 내림) | 개인 투자자용 주식 퀀트 분석 플랫폼. RISE 연계 SW종합설계 3인 팀 졸업작품이고, 저는 클라우드·인프라와 서버 운영을 맡았습니다 |
-| [du-radar](https://github.com/jihun-moon/du-radar) | 대구대 경산캠퍼스 지도 위에 공지, 편의시설, 제보, 운동장 예약을 핀으로 모은 웹앱. 2026 바이브코딩 해커톤 3인 팀 |
-| [PII-Guardian](https://github.com/jihun-moon/PII-Guardian) | 웹 페이지의 개인정보 노출을 찾는 NER 모델. HyperCLOVA X 로 라벨을 만들고 네이버 클라우드에 올렸습니다 |
+| **CHRONO** (비공개 저장소, 서비스는 2026-10 전시 뒤 내림) | 개인 투자자용 주식 퀀트 분석 플랫폼. RISE 연계 SW종합설계 3인 팀 졸업작품이고, 저는 클라우드·인프라와 서버 운영을 맡았습니다. 구조와 화면은 [포트폴리오](https://jihun-moon.github.io/jihun-moon/#projects)에 있습니다 |
 | [im-bank-n8n-agent](https://github.com/jihun-moon/im-bank-n8n-agent) | 금융 보안 로그의 개인정보를 지우고 위험도를 매기는 n8n 파이프라인. 5인 팀에서 파이프라인과 백엔드를 맡았습니다 |
+| [PII-Guardian](https://github.com/jihun-moon/PII-Guardian) | 웹 페이지의 개인정보 노출을 찾는 NER 모델. HyperCLOVA X 로 라벨을 만들고 네이버 클라우드에 올렸습니다 |
+| [du-radar](https://github.com/jihun-moon/du-radar) | 대구대 경산캠퍼스 지도 위에 공지, 편의시설, 제보, 운동장 예약을 핀으로 모은 웹앱. 2026 바이브코딩 해커톤 3인 팀 |
+
+<details>
+<summary>그 밖에 만든 것 7개</summary>
+
+| 프로젝트 | 무엇 |
+|---|---|
 | [battle-rogue](https://github.com/jihun-moon/battle-rogue) | 언리얼 엔진 5 1대1 온라인 대전 게임. 2인 팀, 데디케이티드 서버 빌드 |
+| [eth-autotrade-bot](https://github.com/jihun-moon/eth-autotrade-bot) | CHRONO 이전에 만든 자동매매 봇. 실전 투입 전에 멈췄습니다 |
 | [opengl-earthquake-simulation](https://github.com/jihun-moon/opengl-earthquake-simulation) | C++ 와 OpenGL 로 만든 지진 대피 시뮬레이터. 3인 팀 |
-| [mobile-doctor-app](https://github.com/jihun-moon/mobile-doctor-app) | 병원·약 검색과 진료 이력을 넣은 안드로이드 앱 |
+| [mobile-doctor-app](https://github.com/jihun-moon/mobile-doctor-app) | 병원·약 검색과 진료 이력을 넣은 안드로이드 앱. 2인 팀 |
 | [Edu-Bridge-Library](https://github.com/jihun-moon/Edu-Bridge-Library) | 도서관 대출 데이터를 초등 교육과정에 붙여 본 공모전 출품작 |
 | [Lecture-Summarizer-AI](https://github.com/jihun-moon/Lecture-Summarizer-AI) | 강의 소리를 Whisper 로 받아쓰는 윈도우 도구 |
-| [eth-autotrade-bot](https://github.com/jihun-moon/eth-autotrade-bot) | CHRONO 이전에 만든 자동매매 봇. 실전 투입 전에 멈췄습니다 |
 | [daegu-univ-cs](https://github.com/jihun-moon/daegu-univ-cs) | 수업 과제와 실습 모음 |
+
+</details>
 
 구조, 수치, 안 된 것은 각 저장소 README 와 노션에 적어 두었습니다.
 
@@ -44,11 +52,12 @@
 
 ## 기술
 
-* **언어** Python, TypeScript, Java, C++, SQL
-* **백엔드** FastAPI, Express, PostgreSQL, Neo4j, Redis, SQLite, Kafka
-* **프런트** Next.js, React, Tailwind CSS
-* **ML** PyTorch, scikit-learn, XGBoost, ONNX Runtime
-* **인프라** Docker, Caddy, GitHub Actions, Linux, 네이버 클라우드, Oracle Cloud
+어디에 썼는지와 같이 적었습니다.
+
+* **운영해 본 것** Ubuntu 서버(Oracle Cloud ARM) 5개월 상시 운영. Docker Compose, Caddy(HTTPS), cron 으로 PostgreSQL 매일 덤프 → gpg 암호화 → OCI Object Storage 보관, GitHub Actions
+* **직접 만든 것** Python(FastAPI) 백엔드, Kafka 를 거쳐 PostgreSQL 에 쌓는 적재 경로(Kafka 서버는 이민성과 같이 맡음), XGBoost·PyTorch 학습과 ONNX 추론, n8n·Express 로그 처리 파이프라인
+* **클라우드 교육** 네이버 클라우드 DANCE 1기에서 VPC, 로드밸런서, Cloud DB 이중화를 콘솔로 구성, NCA 취득
+* **배우는 중** 대구대 산학협력단 부트캠프(2026.07 ~ 2027.01)에서 Java, Spring Boot, JPA, Thymeleaf, Oracle Database, MySQL
 
 쿠버네티스와 테라폼은 아직 실제로 운영해 본 적이 없어서 뺐습니다.
 
