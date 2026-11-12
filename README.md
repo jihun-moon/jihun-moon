@@ -11,6 +11,14 @@
 
 <br/>
 
+## 한눈에
+
+* **서버를 다섯 달 굴렸습니다.** CHRONO 를 Oracle Cloud ARM 한 대에 Docker 로 올려 2026년 5월부터 10월 공학제 전시까지 운영했습니다. 크론이 12줄에서 4줄로 잘린 일, API 가 73분 멈췄는데 워치독이 죽어 있던 일, 백업이 같은 디스크에만 있던 일, 배치 롤백으로 약 7만 7천 행이 빠진 일, 이렇게 사고 네 건을 원인과 고친 방법까지 [노션 CHRONO 페이지](https://www.notion.so/3c472d9f979f815daf89d32a3b515d15)에 적어 두었습니다.
+* **좋은 숫자를 의심하는 장치를 만들었습니다.** 신호 판정 원장의 판정칸 231개 중 거래비용을 빼고도 양수인 칸은 0개였고, 그 결과를 첫 화면에 그대로 띄웠습니다. 이 작품으로 캡스톤디자인 공모전 우수상을 받았습니다.
+* **개인정보는 LLM 앞에서 지웁니다.** im-bank-n8n-agent 에서 26시간 구동 기록 12,458건을 커밋해 두어 README 의 숫자를 누구나 다시 계산할 수 있게 했습니다. 해커톤 최우수상 작품입니다.
+
+<br/>
+
 ## 프로젝트
 
 | 프로젝트 | 무엇 |
@@ -19,7 +27,7 @@
 | [du-radar](https://github.com/jihun-moon/du-radar) | 대구대 경산캠퍼스 지도 위에 공지, 편의시설, 제보, 운동장 예약을 핀으로 모은 웹앱. 2026 바이브코딩 해커톤 3인 팀 |
 | [PII-Guardian](https://github.com/jihun-moon/PII-Guardian) | 웹 페이지의 개인정보 노출을 찾는 NER 모델. HyperCLOVA X 로 라벨을 만들고 네이버 클라우드에 올렸습니다 |
 | [im-bank-n8n-agent](https://github.com/jihun-moon/im-bank-n8n-agent) | 금융 보안 로그의 개인정보를 지우고 위험도를 매기는 n8n 파이프라인. 5인 팀에서 파이프라인과 백엔드를 맡았습니다 |
-| [battle-rogue](https://github.com/jihun-moon/battle-rogue) | 언리얼 엔진 5 1대1 온라인 대전 게임 |
+| [battle-rogue](https://github.com/jihun-moon/battle-rogue) | 언리얼 엔진 5 1대1 온라인 대전 게임. 2인 팀, 데디케이티드 서버 빌드 |
 | [opengl-earthquake-simulation](https://github.com/jihun-moon/opengl-earthquake-simulation) | C++ 와 OpenGL 로 만든 지진 대피 시뮬레이터. 3인 팀 |
 | [mobile-doctor-app](https://github.com/jihun-moon/mobile-doctor-app) | 병원·약 검색과 진료 이력을 넣은 안드로이드 앱 |
 | [Edu-Bridge-Library](https://github.com/jihun-moon/Edu-Bridge-Library) | 도서관 대출 데이터를 초등 교육과정에 붙여 본 공모전 출품작 |
