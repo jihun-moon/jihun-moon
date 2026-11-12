@@ -217,7 +217,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); letter-spacing: -0.02em; }
 /* ===== 프로젝트 ===== */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr));
   gap: var(--sp-4);
 }
 .project-card {
@@ -394,3 +394,19 @@ h1, h2, h3, h4 { font-family: var(--font-head); letter-spacing: -0.02em; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* CHRONO 화면 그림과 구조 흐름 */
+.shot { margin: var(--sp-4) 0 var(--sp-5); }
+.shot img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--r-4); }
+.shot figcaption { margin-top: 8px; font-size: 13px; color: var(--text-2); }
+.flow-wrap { margin: 0 0 var(--sp-5); display: grid; gap: 10px; }
+.flow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.flow-key { width: 40px; font-size: 12px; font-weight: 600; color: var(--text-2); }
+.node { font-size: 13px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--text-2); background: var(--bg-1); }
+.node.mine { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.arr { color: var(--text-2); font-size: 13px; }
+.flow-note { margin: 4px 0 0; font-size: 13px; color: var(--text-2); }
+.more { margin-top: var(--sp-5); border: 1px solid var(--line); border-radius: var(--r-4); background: var(--bg-1); padding: var(--sp-4) var(--sp-5); }
+.more summary { cursor: pointer; font-weight: 600; }
+.more ul { margin: var(--sp-3) 0 0; padding-left: 18px; color: var(--text-2); line-height: 1.8; font-size: 14px; }
+.more a { font-weight: 600; }
