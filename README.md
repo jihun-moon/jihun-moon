@@ -15,7 +15,7 @@
 
 | 프로젝트 | 무엇 |
 |---|---|
-| **CHRONO** (비공개 저장소, [서비스](https://chrono-ai.mooo.com)) | 개인 투자자용 주식 퀀트 분석 플랫폼. RISE 연계 SW종합설계 3인 팀 졸업작품이고, 저는 클라우드·인프라와 서버 운영을 맡았습니다 |
+| **CHRONO** (비공개 저장소, 서비스는 2026-10 전시 뒤 내림) | 개인 투자자용 주식 퀀트 분석 플랫폼. RISE 연계 SW종합설계 3인 팀 졸업작품이고, 저는 클라우드·인프라와 서버 운영을 맡았습니다 |
 | [du-radar](https://github.com/jihun-moon/du-radar) | 대구대 경산캠퍼스 지도 위에 공지, 편의시설, 제보, 운동장 예약을 핀으로 모은 웹앱. 2026 바이브코딩 해커톤 3인 팀 |
 | [PII-Guardian](https://github.com/jihun-moon/PII-Guardian) | 웹 페이지의 개인정보 노출을 찾는 NER 모델. HyperCLOVA X 로 라벨을 만들고 네이버 클라우드에 올렸습니다 |
 | [im-bank-n8n-agent](https://github.com/jihun-moon/im-bank-n8n-agent) | 금융 보안 로그의 개인정보를 지우고 위험도를 매기는 n8n 파이프라인. 5인 팀에서 파이프라인과 백엔드를 맡았습니다 |
