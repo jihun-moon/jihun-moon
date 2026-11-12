@@ -54,7 +54,7 @@
 * **운영해 본 것** Ubuntu 서버(Oracle Cloud ARM) 5개월 상시 운영. Docker Compose, Caddy(HTTPS), cron 으로 PostgreSQL 매일 덤프 → gpg 암호화 → OCI Object Storage 보관, GitHub Actions
 * **직접 만든 것** Python(FastAPI) 백엔드, Kafka 를 거쳐 PostgreSQL 에 쌓는 적재 경로(Kafka 서버는 이민성과 같이 맡음), XGBoost·PyTorch 학습과 ONNX 추론, n8n·Express 로그 처리 파이프라인
 * **클라우드 교육** 네이버 클라우드 DANCE 1기에서 VPC, 로드밸런서, Cloud DB 이중화를 콘솔로 구성, NCA 취득
-* **배우는 중** 대구대 산학협력단 부트캠프(2026.07 ~ 2027.01)에서 Java, Spring Boot, JPA, Thymeleaf, Oracle Database, MySQL
+* **배우는 중** 대구대 산학협력단 부트캠프(2026.07 ~ 2027.01). Java 17, Spring Boot(REST 컨트롤러, @Valid 입력 검사, Controller·Service·Repository 계층, JPA, JUnit), Thymeleaf, Oracle Database, MySQL. 3인 팀 프로젝트를 Spring Boot 4 로 시작했습니다
 
 쿠버네티스와 테라폼은 아직 실제로 운영해 본 적이 없어서 뺐습니다.
 
