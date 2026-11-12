@@ -411,3 +411,4 @@ h1, h2, h3, h4 { font-family: var(--font-head); letter-spacing: -0.02em; }
 .more ul { margin: var(--sp-3) 0 0; padding-left: 18px; color: var(--text-2); line-height: 1.8; font-size: 14px; }
 .more a { font-weight: 600; }
 .flagship > .btn { align-self: flex-start; margin-bottom: var(--sp-4); }
+.stack-cat p { font-family: inherit; font-size: 14.5px; line-height: 1.75; }
